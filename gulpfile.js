@@ -28,10 +28,15 @@ $.gulp.task('default', $.gulp.series(
     'js.foundation',
     'js.process',
     'copy.image',
+    'copy.fonts',
     'css.foundation'
   ),
   $.gulp.parallel(
     'watch',
     'serve'
   )
+));
+
+$.gulp.task('svg', $.gulp.series(
+  'svg'
 ));

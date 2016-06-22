@@ -1,0 +1,36 @@
+doctype html
+html
+  include common/_head
+
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+    .header
+      div.container__item
+        div.content__item
+          div.wrapper__content
+            div.autoriz Авторизуйтесь
+            div.inp__login
+              input(type="text" name="login" placeholder="Логин" required).login
+            div.inp__login
+              input(type="text" name="password" placeholder="Пароль" required).login
+            div.check_robot
+              input(type="checkbox" id="c1" name="robot" value="a1").control_robot
+              label(for="c1").no__robot <span></span>&nbsp; Я человек
+            div.no__robot Вы точно не робот?
+            div.radio_robot
+              input(type="radio" id="c2" name="robot" value="a1").control_robot
+              label(for="c2").no__robot <span></span> Да
+              input(type="radio" id="c3" name="robot" value="a1").control_robot
+              label(for="c3").no__robot <span></span> Не уверен
+
+
+            div.buttons__line1
+              a(href="index.html", alt="dd")
+                button.button__general На главную
+              a(href="about.html", alt="dd")
+                button.button__voity Войти
+
+      div.text_footer_autorizac   &#169 Олег Михалев | создано с любовью в LoftSchool | 2016

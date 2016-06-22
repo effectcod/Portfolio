@@ -1,0 +1,134 @@
+doctype html
+html
+  include common/_head
+
+body
+  div.wrapper__ff
+    div.content__ff
+      <!--[if lt IE 7]>
+      <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+      <![endif]-->
+      .header__work
+        div.soc__icon
+          include common/_main1
+          a(href="#", alt="dd")
+            +use("hamburger", "svg-hamburger-dims")
+        div.header__wp
+          img(src="assets/img/portfolio_header.png", alt="вв").img__header_wp
+        div.foto__header_work
+          img(src="assets/img/2.png", alt="вв").img__header_work
+        div.fio__header_work Олег Михалев
+        div.descr_header_work Личный сайт веб разработчика
+        div.strelka
+          a(href="#", alt="dd")
+            img(src="assets/img/arrow_down.png", alt="вв").img__strelka
+        div.box-tranigle1
+          svg.traingle(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" preserveAspectRatio="none") <polygon fill="#efeee9" points="0,0 0,150 500.8,150 500.8,75.5"/> <polygon fill="#eeebdf" points="1000,0 1000,150 500,150 500,75.5"/>
+
+      div.block__i
+          div.about_i
+            div.zagolovok__about_i Обо мне
+              div.tochki &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              div.logo__i
+                img(src="assets/img/about_header.png", alt="вв").img__i
+            div.who__i
+              div.foto__who_i
+                img(src="assets/img/2.png", alt="вв").img__who_i
+              div.zagolovok__who_i Кто я
+              div.tochki__zagolovok_who_i &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              div.content__who_i
+                div.text__who_i Я веб разработчик из Москвы. Мне 35 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. 
+                div.text__who_i Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите, как тут всё классно и красиво!
+        
+          div.polza__i
+            div.wrap
+            div.zagolovol_polza Чем я могу быть <br>вам полезен
+                div.tochki__zagolovol_polza &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              div.content_polza Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
+              div.frontend Frontend
+              div.Front__scil
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_html"/><text x="64" y="98" class="name_scil">HTML5</text>
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="70" y="98" class="name_scil">SCC3</text>
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="54" y="88" class="name_scil">JavaScript</text> <text x="54" y="110" class="name_scil">& jQuery</text>
+
+              div.frontend Backend
+              div.Backend__scil
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_html"/><text x="75" y="98" class="name_scil">PHP</text>
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="68" y="98" class="name_scil">mySQL</text>
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="64" y="88" class="name_scil">Node.js</text> <text x="64" y="110" class="name_scil">& npm</text>
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="55" y="98" class="name_scil">Mongo.db</text>
+
+              div.frontend WorkFlow
+              div.Front__scil
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_html"/><text x="79" y="98" class="name_scil">Git</text>
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="74" y="98" class="name_scil">Gulp</text>
+                g
+                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="69" y="98" class="name_scil">Bower</text>
+      div.map
+          div.wrap__form_contacts
+            div.form__contacts
+              div.zagolovok__form_contacts Контакты
+              div.tochki_zagolovok__form_contacts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              div.contacts__item
+                +use("skype", "svg-skype-dims")
+                div.contacts_text Mih_tm
+              div.contacts__item
+                +use("envelope2", "svg-envelope2-dims")
+                div.contacts_text Mih_tm@mail.ru
+              div.contacts__item
+                +use("phone2", "svg-phone2-dims")
+                div.contacts_text +79855533348
+              div.contacts__item
+                +use("map_marker", "svg-map_marker-dims")
+                div.contacts_text Москва, ул. Южнопортовая, д.82
+
+
+
+            
+
+
+
+
+
+
+   
+        
+    div.footer1
+          
+          div.cont__f1
+            div.cont__f1_1 Этот сайт я сделал в рамках обучения в Школе <br> онлайн образования LoftSchool.
+            div.cont__f1_2 &#169 Олег Михалев <br> Сделано с любовью в LoftSchool | 2016
+
+
+          div.cont__f2
+            div.cont__f2_1 
+              a(href="work.html", alt="dd").menu Мои работы
+              a(href="about.html", alt="dd").menu Обо мне
+              a(href="blog.html", alt="dd").menu Блог
+              a(href="autorization.html", alt="dd").menu Авторизация
+              div.cont__f2_2
+                include common/_main
+
+
+          div.cont__f3
+            ul.conts
+              li.cont__f3_1 Skype: Mih_tm
+              li.cont__f3_2 Mih_tm@mail.ru
+              li.cont__f3_3 +79855533348
+              li.cont__f3_4 Москва ул. Южнопортовая д.18, кв.82
+
+
+          
+
+
+
+          

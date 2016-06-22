@@ -1,0 +1,13 @@
+- var svg = "assets/img/svg-sprite.svg"
+
+
+mixin use(name, c_name)
+  svg(role="img" class="#{c_name}")
+    use(xlink:href="#{svg}##{name}")
+
+.main
+  #app
+    .sprite
+      +use("vk", "svg-vk-dims")
+      +use("github", "svg-github-dims")
+      +use("in", "svg-in-dims")

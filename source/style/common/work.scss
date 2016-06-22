@@ -1,0 +1,540 @@
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/roboto-regular.ttf);}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url(../fonts/roboto-medium.ttf);}
+
+@font-face {
+    font-family: roboto-light;
+    src: url(../fonts/roboto-light.ttf);}
+
+@font-face {
+    font-family: Sansus_Webissimo;
+    src: url(../fonts/Sansus_Webissimo.ttf);}
+
+@font-face {
+    font-family: MyriadPro-Regular;
+    src: url(../fonts/MyriadPro-Regular.otf);}
+
+
+
+.header__work{
+  background-image: url(../img/sand.jpg);
+  height: 650px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  top: 0px;
+}
+
+.soc_icon{
+  padding: 10px 0 0 20px;
+  fill: #fff;
+}
+
+
+
+.header__wp{
+  padding: 40px 10% 0 10%;
+}
+
+.img__header_wp{
+  height: 100%;
+  width: 100%;
+}
+
+.foto__header_work{
+  margin: -18% 30% 10% 45%;
+}
+
+.img__header_work{
+  height: 141px;
+  width: 141px;
+  border-radius: 50% 50%;
+  position: relative;
+
+}
+
+
+
+
+.fio__header_work{
+  font-family: roboto-medium, sans serif;
+  font-size: 35px;
+  color: #fff;
+  position: relative;
+  top: -120px;
+  text-align: center;
+}
+
+.descr_header_work{
+  font-family: roboto-regular, sans serif;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  top: -100px;
+  text-align: center;
+  padding: 0 0 0 0;
+}
+
+.strelka{
+  padding: 0% 25% 7% 50%;
+  cursor: pointer;
+
+}
+
+.img__strelka{
+  text-align: center;
+  height: 16px;
+  width: 26px;
+  position: relative;
+  cursor: pointer;
+}
+
+.box-tranigle {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  margin: -10px auto -80px auto;
+
+}
+
+
+
+
+
+
+.zagolovok__my_work{
+  font-family: Sansus_Webissimo;
+  font-size: 63px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 100px 0 0 0; 
+  z-index: 2;
+}
+
+.logo__img_work{
+  position: relative;
+  top: -130px;
+}
+
+.img__logo_work{
+  height: 150px;
+  width: 500px;
+  padding: 0;
+}
+
+.block__slider{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -150px;
+}
+
+.ddd{
+  padding: 50px 0 0 0;
+}
+
+.descr__work{
+  display: flex;
+  background: #f4f0e9;
+}
+
+.sait__work{
+  display: flex;
+  align-items: center;
+  background: #ebe5db;
+}
+
+.name__work{
+  font-family: Sansus_Webissimo;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #5d5a55;
+  text-align: center;
+  padding: 0 50px;
+  display: block;
+}
+
+hr{
+  border: 1px solid #aeaeab;
+}
+
+.desc__works{
+  font-family: roboto-medium, sans-serif;
+  font-size: 16px;
+  color: #cd8920;
+}
+
+.btn__see_work{
+  height: 45px;
+  width: 200px;
+  background-color: #efab26;
+  border: none;
+  font-family: roboto-medium, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 0;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.work{
+  text-align: center;
+}
+
+.img__work1{
+  height: 410px;
+  width: 600px;
+}
+
+div.nav_work{
+  display: flex;
+  justify-content: space-between;
+}
+
+.img__work2{
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  display: flex;
+}
+
+.img__str_work2{
+  height: 30px;
+  width: 50px;
+  position: relative;
+  top: -150px;
+}
+
+.img__work3{
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  display: flex;
+}
+
+.otzivi{
+  background-color: #f0e6d3;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  top: -150px;
+}
+
+.block_form{
+  background-image: url(../img/sand-plyazh-pesok-makro-priroda1.png);
+  height: 650px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  padding: 0 0 20px 0;
+  top: 50px;
+}
+
+.wrap__form{
+  padding: 30px 0 0 0;
+}
+
+.zagolovok_otzivi{
+  font-family: Sansus_Webissimo;
+  font-size: 63px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 80px 0 0 0; 
+}
+
+.logo__img_work{
+  font-family: MyriadPro-Regular, sans-serif;
+  color: #fff;
+  font-size: 204px;
+  opacity: 0.3;
+  position: relative;
+  top: -170px;
+}
+
+
+.logo__img_about{
+  position: relative;
+  top: -120px;
+}
+
+
+.block__otzivi{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 0 20px 0;
+}
+
+.otziv__1{
+  display: flex;
+  align-items: center;
+  padding: 0 100px 0 200px;
+  font-family: roboto-regular, sans-serif;
+  color: #5d5a55;
+  font-size: 16px;
+}
+
+.otziv__2{
+  display: flex;
+  align-items: center;
+  padding: 0 200px 0 100px;
+  font-family: roboto-regular, sans-serif;
+  color: #5d5a55;
+  font-size: 16px;
+}
+
+foto_dima{
+  padding: 50px 10px 0 30px;
+  display: flex;
+}
+
+.img__dima{
+  border-radius: 50% 50%;
+  height: 80px;
+  width: 80px;
+}
+
+.otziv_dima{
+  display: flex;
+  justify-content: center;
+}
+
+.name_dima{
+  display: flex;
+  align-items: center;
+  padding: 0 150px 0 50px;
+  color: #cd8920;
+}
+
+.foto_zar{
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 150px;
+}
+
+.name_zar{
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  color: #cd8920;
+}
+
+.form1{
+  width: 380px;
+  height: 480px;
+  background-color: rgba(222, 201, 165, 0.55);
+  margin: 50px auto 0 auto;
+}
+
+.form{
+  position: relative;
+  padding: 0 0 0 0px;
+  text-align: center;
+}
+
+.inp__name{
+  padding: 10px 0;
+  text-align: center;
+}
+.inp__email{
+  padding: 10px 0;
+}
+
+.block__textar{
+  padding: 10px 0px;
+}
+
+.textar{
+  padding: 10px 0 0 10px;
+  width: 300px;
+  height: 200px;
+  font-family: roboto-regular, sans-serif;
+  color: #5d5a55;
+  font-size: 16px;
+}
+
+.btn__otprav{
+  height: 45px;
+  width: 188px;
+  background-color: #e7a731;
+  border: none;
+  font-family: roboto-medium, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 0;
+  cursor: pointer;
+  position: relative;
+  top: 32px;
+}
+
+.btn__ochist{
+  height: 45px;
+  width: 188px;
+  background-color: #e7a731;
+  border: none;
+  font-family: roboto-medium, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 0;
+  cursor: pointer;
+  position: relative;
+  top: 32px;
+}
+
+.zagolovok_contact{
+  font-family: Sansus_Webissimo;
+  font-size: 35px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0 20px 0; 
+  color: #5d5a55;
+}
+
+.name{
+
+  font-family: roboto-regular, sans-serif;
+  color: #5d5a55;
+  font-size: 16px;
+  padding: 0 0 0 10px;
+  width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+  background-color: #4e4b46;
+  width: 100%;
+  top: 0px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+}
+
+.cont__f1_1{
+  display: flex;
+  align-items: left;
+  color: #fff;
+  font-family: roboto-light, sans-serif;
+  font-size: 16px;
+}
+
+.cont__f1{
+  padding: 10px 10px;
+  border-right: 1px solid #73726d;
+}
+
+
+
+.cont__f1_2{
+  display: flex;
+  align-items: left;
+  padding: 20px 10px;
+  color: #a5a4a4;
+  font-family: roboto-light, sans-serif;
+  font-size: 16px;
+
+}
+
+
+.cont__f2{
+  display: flex;
+  align-items: left;
+
+}
+
+.cont__f2_1{
+  padding: 10px 0;
+}
+
+.cont__f2_2{
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+
+.cont__f3{
+  display: flex;
+  align-items: left;
+  border-left: 1px solid #73726d;
+}
+
+
+
+.menu{
+  display: inline;
+  padding: 0 20px;
+  color: #fff;
+  font-family: roboto-medium, sans-serif;
+  font-size: 16px;
+   text-decoration: none;
+
+}
+.conts{
+  list-style-type: none;
+  color: #a5a4a4;
+  font-family: roboto-light, sans-serif;
+  font-size: 16px;
+  
+}
+
+.svg-vk1-dims{
+  fill: #fff;
+  padding: 0 8px;
+  height: 50px;
+  width: 50px;
+}
+
+.svg-vk1-dims:hover{
+  fill: #cd8920;
+}
+
+.svg-github1-dims{
+  fill: #fff;
+  padding: 0 8px;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+
+.svg-github1-dims a{
+  text-decoration: none;
+}
+
+.svg-github1-dims:hover{
+  fill: #cd8920;
+}
+
+
+.svg-in1-dims{
+  fill: #fff;
+  padding: 0 8px;
+  height: 50px;
+  width: 50px;
+  text-decoration: none;
+}
+
+
+
+.svg-in1-dims:hover{
+  fill: #cd8920;
+}
+
+
+@import 'common/svg-sprite.scss';
+

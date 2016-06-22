@@ -1,0 +1,28 @@
+doctype html
+html
+  include common/_head
+ 
+  body
+    <!--[if lt IE 7]>
+    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+    <![endif]-->
+
+    .header
+      div.container
+        div.welkom
+          div.wind
+          div.foto
+            img(src="assets/img/2.png", alt="вв").img_foto
+            p.fio Олег Михалев
+            p.descr Личный сайт веб разработчика
+            .main
+              #app
+                .sprite
+                  +use("vk", "svg-vk-dims")
+
+            a(href="#", alt="dd")
+              button.button_mywork Мои работы
+            button.button_aboutme Обо мне
+            button.button_blog Блог
+      .rectangle
+    div.text   &#169 Олег Михалев | создано с любовью в LoftSchool | 2016

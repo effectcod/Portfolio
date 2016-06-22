@@ -1,27 +1,364 @@
-.greating {
-  overflow: hidden;
+@font-face {
+    font-family: roboto-regular;
+    src: url(../fonts/roboto-regular.ttf);}
+
+@font-face {
+    font-family: roboto-medium;
+    src: url(../fonts/roboto-medium.ttf);}
+
+
+
+.flip {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  perspective: 1000px; // задаем перспективу
+}
+//  при добавлении класса разворачиваем оба элемента
+.flip.flipping .flip__back {   
+  transform: rotateY(0deg);
+}
+.flip.flipping .flip__front {
+  transform: rotateY(180deg);
+}
+
+.flip__front, .flip__back {
+  transition: 0.9s;  // скорость анимации
+  backface-visibility: hidden; // при развороте скрываем заднюю сторону
+  transform-style: preserve-3d; //  создаем трехмерное пространство
+  background: rgba(grey, 0.6); 
+  position: absolute;
+  top:0;
+  left:0;
+  width: 300px;
+  height: 200px;
+}
+// разворачиеваем элементы при удалении класса
+.flip__front {
+  z-index: 2; 
+  transform: rotateY(0deg);  
+}
+.flip__back { 
+  transform: rotateY(-180deg);
+}
+
+
+
+
+.header{
+  background-image: url(../img/sand.jpg);
+  height: 650px;
+  width: 100%;
+  background-size: cover;
+}
+
+.container__item{
+  text-align: center;
+  padding: 5% 40% 0 36%;
+}
+
+.content__item{
+  text-align: center;
+  background-color: rgba(222, 201, 165, 0.55);
+  width: 380px;
+  height: 400px;
+  z-index: 50;
+}
+
+.img_foto{
+  height: 141px;
+  width: 141px;
+  border-radius: 50% 50%;
   position: relative;
-  padding: 150px 20px 50px;
-  background: #F44336;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-
-  &_text {
-    font: 45px 'Arial', sans-serif;
-    color: #fff;
-  }
-
-  &_picture {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 114px;
-    background: url('/assets/img/viking.png') no-repeat center;
-    transform: translate3D(100%, 0, 0);
-    transition: transform 0.5s;
-  }
+  top: 20px;
 }
 
-.greating_picture.m--show {
-  transform: translate3D(0, 0, 0);
+.fio{
+  font-family: roboto-medium, sans serif;
+  font-size: 28px;
+  color: #fff;
+  position: relative;
+  top: 20px;
+  opacity: 1;
 }
+
+.descr{
+  font-family: roboto-regular, sans serif;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  top: 30px;
+  opacity: 0.8;
+}
+
+.btn__auto{
+  text-align: right;
+  padding: 20px 30px 0 0;
+}
+
+.button__autoriz{
+  height: 45px;
+  width: 170px;
+  background-color: transparent;
+  border: 2px #fff solid;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-family: roboto-medium, sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.button__autoriz:hover{
+  background-color: #fff;
+  color: #e5a730;
+}
+
+.svg__line{
+  padding: 70px 0 0 0;
+}
+
+.svg-vk-dims{
+  fill: #efe4d8;
+  top: 0px;
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.svg-vk-dims:hover{
+  fill: #fff;
+}
+
+.svg-github-dims{
+  fill: #efe4d8;
+  top: 0px;
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.svg-github-dims:hover{
+  fill: #fff;
+}
+
+.svg-in-dims{
+  fill: #efe4d8;
+  top: 0px;
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.svg-in-dims:hover{
+  fill: #fff;
+}
+
+.buttons__line{
+  position: relative;
+  top: 58px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.button__mywork{
+  height: 45px;
+  width: 170px;
+  background-color: #e6a731;
+  border: none;
+  font-family: roboto-medium, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 0;
+  cursor: pointer;
+}
+
+.button__mywork:hover{
+  background-color: #ce8a20;
+}
+
+.button__aboutme{
+  height: 45px;
+  width: 124px;
+  background-color: #e6a731;
+  border: none;
+  font-family: roboto-medium, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.button__aboutme:hover{
+  background-color: #ce8a20;
+}
+
+.button__blog{
+  height: 45px;
+  width: 78px;
+  background-color: #e6a731;
+  border: none;
+  font-family: roboto-medium, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 0;
+  cursor: pointer;
+}
+
+.button__blog:hover{
+  background-color: #ce8a20;
+}
+
+
+.rectangle{
+  background: linear-gradient(to bottom, #000, #fff);
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 550px;
+  opacity: 0.2;
+}
+
+.text{
+  display: block;
+  font-family: roboto-regular, sans-serif;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  top: 70px;
+  padding: 0;
+  }
+
+
+
+
+
+.content__item{
+  position: relative;
+}
+
+.wrapper__content{
+  position: relative;
+}
+
+.autoriz{
+  font-family: Sansus_Webissimo;
+  font-size: 35px;
+  color: #fff;
+  padding: 20px 10px 20px 10px;
+  }
+
+.autoriz::before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: 10px;
+  background-image: url(../img/Ellipse-4.png);
+
+}
+
+.autoriz::after{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  height: 10px;
+  background-image: url(../img/Ellipse-41.png);
+
+}
+
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+.inp__login{
+  padding: 10px 0;
+  text-align: center;
+}
+
+.login{
+  font-family: roboto-regular, sans-serif;
+  color: #373e42;
+  font-size: 16px;
+  padding: 0 0 0 10px;
+  width: 300px;
+  opacity: 0.5;
+}
+
+.check_robot{
+  padding: 20px 0 30px 0;
+}
+
+.buttons__line1{
+  padding: 50px 0;
+}
+
+.no__robot{
+  font-family: roboto-regular, sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+
+.radio_robot{
+  padding: 15px 0 10px 0;
+}
+
+.control_robot{
+
+}
+
+.button__general{
+  height: 45px;
+  width: 188px;
+  background-color: #dfa43a;
+  border: none;
+  font-family: roboto-medium, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 0;
+  cursor: pointer;
+}
+
+.button__general:hover{
+  background-color: #c98a2c;
+}
+
+.button__voity{
+  height: 45px;
+  width: 188px;
+  background-color: #dfa43a;
+  border: none;
+  font-family: roboto-medium, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 0;
+  cursor: pointer;
+}
+
+.button__voity:hover{
+  background-color: #c98a2c;
+}
+
+
+.text_footer_autorizac{
+  display: block;
+  font-family: roboto-regular, sans-serif;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+  text-align: center;
+  top: 120px;
+  padding: 0;
+}
+
+@import 'common/svg-sprite.scss';
+

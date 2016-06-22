@@ -1,11 +1,41 @@
 doctype html
 html
+
+
   include common/_head
+
+   .flip
+    .flip__container
+      .flip__front
+        |front-text
+      .flip__back
+        |back-text
+
   body
     <!--[if lt IE 7]>
     <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
     <![endif]-->
 
-    .greating
-      .greating_text Hello! I'm your training builder.
-      .greating_picture
+
+
+    .header
+      div.btn__auto
+        a(href="autorization.html", alt="dd")
+          button.button__autoriz Авторизоваться
+      div.container__item
+        div.content__item
+          div.wrapper__content
+            img(src="assets/img/2.png", alt="вв").img_foto
+            div.fio Олег Михалев
+            div.descr Личный сайт веб разработчика
+            div.svg__line
+              include common/_main
+            div.buttons__line
+              a(href="work.html", alt="dd")
+                button.button__mywork Мои работы
+              a(href="about.html", alt="dd")
+                button.button__aboutme Обо мне
+              a(href="blog.html", alt="dd")
+                button.button__blog Блог
+      div.rectangle
+      div.text   &#169 Олег Михалев | создано с любовью в LoftSchool | 2016

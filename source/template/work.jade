@@ -1,0 +1,126 @@
+doctype html
+html
+  include common/_head
+
+body
+  div.wrapper__ff
+    div.content__ff
+      <!--[if lt IE 7]>
+      <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+      <![endif]-->
+      .header__work
+        div.soc__icon
+            include common/_main1
+            a(href="#", alt="dd")
+              +use("hamburger", "svg-hamburger-dims")
+        div.header__wp
+          img(src="assets/img/portfolio_header.png", alt="вв").img__header_wp
+        div.foto__header_work
+          img(src="assets/img/2.png", alt="вв").img__header_work
+        div.fio__header_work Олег Михалев
+        div.descr_header_work Личный сайт веб разработчика
+        div.strelka
+          a(href="#", alt="dd")
+            img(src="assets/img/arrow_down.png", alt="вв").img__strelka
+
+        div.box-tranigle
+            svg.traingle(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" preserveAspectRatio="none") <polygon fill="#fff" points="0,0 0,150 500.8,150 500.8,75.5"/> <polygon fill="#fff" points="1000,0 1000,150 500,150 500,75.5"/>
+      
+
+      div.block__my_work
+        div.zagolovok__my_work Мои работы
+            div.logo__img_work
+              img(src="assets/img/works_header2.png", alt="вв").img__logo_work
+
+          div.block__slider
+
+            div.descr__work
+              div.name__work 
+                p.ddd Сайт школы онлайн образования
+                hr
+                div.desc__works HTML, CSS, JAVASCRIPT
+                  hr
+                a(href="work.html", alt="dd")
+                  button.btn__see_work Посмотреть сайт
+
+
+            div.sait__work
+              div.work
+                img(src="assets/img/Work_1.png", alt="вв").img__work1
+                div.nav_work
+                  div.nav_work2
+                    img(src="assets/img/Work_2.png", alt="вв").img__work2
+                    a(href="#", alt="dd")
+                      img(src="assets/img/portf_arrow_down.png", alt="вв").img__str_work2
+                  div.nav_work3
+                    img(src="assets/img/Work_3.png", alt="вв").img__work3
+                    a(href="#", alt="dd")
+                      img(src="assets/img/portf_arrow_up.png", alt="вв").img__str_work2
+
+      div.otzivi
+        div.zagolovok_otzivi Что обо мне говорят
+          div.logo__img_about
+            img(src="assets/img/about_header.png", alt="вв").img__logo_work
+
+        div.block__otzivi
+          div.otziv__1 
+            p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+          div.otziv__2
+            p Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+
+        div.otziv_dima
+              div.foto_dima
+                img(src="assets/img/3.png", alt="вв").img__dima
+              div.name_dima
+                p.d__k <strong>Ковальчук Дмитрий</strong> <br> Основатель Loftschool
+              div.foto_zar
+                img(src="assets/img/zar.png", alt="вв").img__dima
+              div.name_zar
+                p.z__z <strong> Зар Захаров </strong><br> Главный преподаватель
+
+        div.block_form
+          div.wrap__form
+            div.form1
+              div.zagolovok_contact Связаться со мной
+              div.form
+                div.inp__name
+                  input(type="text" name="name" placeholder="Имя" required).name
+                div.inp__email
+                  input(type="text" name="email" placeholder="E-mail" required).name
+                div.block__textar
+                  textarea(name="message" placeholder="Ваше сообщение" required).textar
+                div.btn_line
+                  a(href="#", alt="dd")
+                    button.btn__otprav Отправить
+                  a(href="#", alt="dd")
+                    button.btn__ochist Очистить
+        
+    div.footer
+      div.cont__f1
+        div.cont__f1_1 Этот сайт я сделал в рамках обучения в Школе <br> онлайн образования LoftSchool.
+        div.cont__f1_2 &#169 Олег Михалев <br> Сделано с любовью в LoftSchool | 2016
+
+
+      div.cont__f2
+        div.cont__f2_1 
+          a(href="work.html", alt="dd").menu Мои работы
+          a(href="about.html", alt="dd").menu Обо мне
+          a(href="blog.html", alt="dd").menu Блог
+          a(href="autorization.html", alt="dd").menu Авторизация
+          div.cont__f2_2
+            include common/_main
+
+
+      div.cont__f3
+        ul.conts
+          li.cont__f3_1 Skype: Mih_tm
+          li.cont__f3_2 Mih_tm@mail.ru
+          li.cont__f3_3 +79855533348
+          li.cont__f3_4 Москва ул. Южнопортовая д.18, кв.82
+
+
+          
+
+
+
+          

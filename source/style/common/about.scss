@@ -38,14 +38,14 @@
   width: 100%;
   background-size: cover;
   position: relative;
-  top: 0px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-position: left top;
+  background-repeat: no-repeat;
 }
 
-.soc__icon{
-  padding: 10px 0 0 20px;
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .svg-hamburger-dims{
   fill: #fff;
@@ -54,71 +54,26 @@
   padding: 0 20px;
 }
 
-.header__wp{
-  padding: 40px 10% 0 10%;
-}
-
-.img__header_wp{
-  height: 100%;
-  width: 100%;
-}
-
-.foto__header_work{
-  margin: -18% 30% 10% 45%;
-}
-
-.img__header_work{
-  height: 141px;
-  width: 141px;
-  border-radius: 50% 50%;
-  position: relative;
-}
 
 
 
 
-.fio__header_work{
-  font-family: roboto-medium, sans serif;
-  font-size: 35px;
-  color: #fff;
-  position: relative;
-  top: -120px;
-  text-align: center;
-}
 
-.descr_header_work{
-  font-family: roboto-regular, sans serif;
-  font-size: 16px;
-  color: #fff;
-  position: relative;
-  top: -100px;
-  text-align: center;
-  padding: 0 0 0 0;
-}
 
-.strelka{
-  padding: -100px auto 20px auto;
-  cursor: pointer;
-  position: relative;
-  top: -50px;
 
-}
 
-.img__strelka{
-  text-align: center;
-  height: 16px;
-  width: 26px;
-  position: relative;
-  cursor: pointer;
-}
+
+
+
+
 
 .box-tranigle1 {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: -5px;
   left: 0;
-  margin: -10px auto -140px auto;
-}
+  margin: 0px auto;
+  }
 
 
 .block__i{
@@ -132,6 +87,7 @@
   display: flex;
   background: #efeee9;
   justify-content: center;
+  width: 50%;
 }
 
 .polza__i{
@@ -139,6 +95,7 @@
   justify-content: flex-start;
   background: #eeebdf;
   flex-wrap: wrap;
+  width: 50%;
 }
 
 .tochki{
@@ -170,7 +127,7 @@ content:"\00B7 \00B7 \00B7"
 
 .foto__who_i{
   position: relative;
-  padding: 20px 0px 20px 90px;
+  padding: 20px 0;
 }
 
 .img__who_i{
@@ -252,7 +209,7 @@ content:"\00B7 \00B7"
   font-family: roboto-regular;
   font-size: 16px;
   color: #5d5a55;
-  padding: 0px 50px;
+  padding: 0px 0px 0 2px;
   position: relative;
   top: 0px;
 }
@@ -261,22 +218,45 @@ content:"\00B7 \00B7"
   font-family: roboto-medium;
   font-size: 28px;
   color: #5d5a55;
-  padding: 10px 0px 0 50px;
+  padding: 20px 0px 0 50px;
   text-align: left;
   position: relative;
   top: 0px;
 }
 
 .Front__scil{
-  padding: 10px 0px 0 5px;
+  padding: 10px 0px 70px 5px;
+  height: 120px;
+  width: 100%;
 }
 
 .g-circles{
   fill: none;
   stroke-width: 25;
   stroke: #ccc;
-  width: 170;
-  height: 170;
+
+
+}
+
+.skill__item{
+  display: inline;
+}
+
+.chart {
+    position: relative;
+    display: inline-block;
+    color: #e6ab3d;
+    text-align: center;
+}
+
+figure {
+  margin: 0 30px 20px 0;
+  vertical-align: middle;
+}
+
+.chart figcaption {
+    width: 120px;
+    height: 120px;
 
 }
 
@@ -300,7 +280,13 @@ content:"\00B7 \00B7"
 }
 
 .Backend__scil{
-    padding: 10px 0px 5px 5px;
+    padding: 10px 0px 50px 5px;
+}
+
+.workflow__scil{
+  padding: 10px 0px 100px 5px;
+  height: 120px;
+  width: 100%;
 }
 
 
@@ -474,7 +460,7 @@ content:"\00B7 \00B7"
   color: #fff;
   font-family: roboto-medium, sans-serif;
   font-size: 16px;
-   text-decoration: none;
+  text-decoration: none;
 
 }
 .conts{

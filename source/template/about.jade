@@ -9,22 +9,27 @@ body
       <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
       <![endif]-->
       .header__work
-        div.soc__icon
           include common/_main1
-          a(href="#", alt="dd")
-            +use("hamburger", "svg-hamburger-dims")
-        div.header__wp
-          img(src="assets/img/portfolio_header.png", alt="вв").img__header_wp
-        div.foto__header_work
-          img(src="assets/img/2.png", alt="вв").img__header_work
-        div.fio__header_work Олег Михалев
-        div.descr_header_work Личный сайт веб разработчика
-        div.strelka
-          a(href="#", alt="dd")
-            img(src="assets/img/arrow_down.png", alt="вв").img__strelka
-        div.box-tranigle1
-          svg.traingle(xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 200" preserveAspectRatio="none") <polygon fill="#efeee9" points="0,0 0,150 500.8,150 500.8,75.5"/> <polygon fill="#eeebdf" points="1000,0 1000,150 500,150 500,75.5"/>
+          div.humb
+            a(href="#", alt="dd").ssilka 
+              +use("hamburger", "svg-hamburger-dims")
+          
+          div.wrapper__foto
+            div.foto__header_work
+              img(src="assets/img/2.png", alt="вв").img__header_work
+            div.fio__header_work Олег Михалев
+            div.descr_header_work Личный сайт веб разработчика
+            div.strelka
+              a(href="#", alt="dd")
+                img(src="assets/img/arrow_down.png", alt="вв").img__strelka
+          div.header__fon_zagolovka
+            img(src="assets/img/portfolio_header.png", alt="вв").img__header_wp
+          div.box-tranigle
+            svg.traingle(xmlns='http://www.w3.org/2000/svg', viewBox="0 0 1000 85" preserveaspectratio='none')
+              <polygon fill="#efeee9" points="0,0 0,86 500.8,86 500.8,75.5"/>
+              <polygon fill="#efebe0" points="1000,0 1000,86 500,86 500,75.5"/>
 
+            
       div.block__i
           div.about_i
             div.zagolovok__about_i Обо мне
@@ -47,32 +52,56 @@ body
               div.content_polza Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
               div.frontend Frontend
               div.Front__scil
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_html"/><text x="64" y="98" class="name_scil">HTML5</text>
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="70" y="98" class="name_scil">SCC3</text>
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="54" y="88" class="name_scil">JavaScript</text> <text x="54" y="110" class="name_scil">& jQuery</text>
+                ul
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_html"/><text x="64" y="98" class="name_scil">HTML5</text>
+                
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="70" y="98" class="name_scil">SCC3</text>
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="54" y="88" class="name_scil">JavaScript</text> <text x="54" y="110" class="name_scil">& jQuery</text>
 
               div.frontend Backend
               div.Backend__scil
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_html"/><text x="75" y="98" class="name_scil">PHP</text>
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="68" y="98" class="name_scil">mySQL</text>
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="64" y="88" class="name_scil">Node.js</text> <text x="64" y="110" class="name_scil">& npm</text>
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="55" y="98" class="name_scil">Mongo.db</text>
+                ul
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_html"/><text x="75" y="98" class="name_scil">PHP</text>
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="68" y="98" class="name_scil">mySQL</text>
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="64" y="88" class="name_scil">Node.js</text> <text x="64" y="110" class="name_scil">& npm</text>
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="55" y="98" class="name_scil">Mongo.db</text>
 
               div.frontend WorkFlow
-              div.Front__scil
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_html"/><text x="79" y="98" class="name_scil">Git</text>
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="74" y="98" class="name_scil">Gulp</text>
-                g
-                  svg.g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="69" y="98" class="name_scil">Bower</text>
+              div.workflow__scil
+                ul
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_html"/><text x="79" y="98" class="name_scil">Git</text>
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="74" y="98" class="name_scil">Gulp</text>
+                  li.skill__item
+                    figure(data-percent="45").chart
+                      figcaption
+                        svg(wigth="120" height="170").g-circles <circle cx="90" cy="90" r="60"/><circle cx="90" cy="90" r="60" transform="rotate(-90 90 90)" class="sector_css"/><text x="69" y="98" class="name_scil">Bower</text>
       div.map
           div.wrap__form_contacts
             div.form__contacts
@@ -120,11 +149,11 @@ body
 
 
           div.cont__f3
-            ul.conts
-              li.cont__f3_1 Skype: Mih_tm
-              li.cont__f3_2 Mih_tm@mail.ru
-              li.cont__f3_3 +79855533348
-              li.cont__f3_4 Москва ул. Южнопортовая д.18, кв.82
+            div.cont3
+              div.cont__f3_1 Skype: Mih_tm
+              div.cont__f3_1 Mih_tm@mail.ru
+              div.cont__f3_1 +79855533348
+              div.cont__f3_1 Москва ул. Южнопортовая д.18, кв.82
 
 
           

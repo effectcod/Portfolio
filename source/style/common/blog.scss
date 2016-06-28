@@ -30,8 +30,12 @@
   width: 100%;
   background-size: cover;
   position: relative;
-  top: 0px;
-  padding: 0 0 120px 0;
+
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-position: left top;
+  background-repeat: no-repeat;
 }
 
 
@@ -85,10 +89,10 @@
 .box-tranigle2 {
   width: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 195px;
   left: 0;
-  margin: -10px auto 50px auto;
-}
+  margin: 0px auto;
+  }
 
 .container_blog{
   display: flex;

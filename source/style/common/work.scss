@@ -482,22 +482,22 @@ hr{
   position: relative;
   top: 300px;
   float: left;
+  z-index: 201;
 }
 
 .er1{
   position: relative;
   top: 300px;
   padding: 0 0 0 200px;
+    z-index: 200;
 }
 
 .slider__controls-top{
-    position: absolute;
-    float: left;
+
 }
 
 .slider__controls-bottom{
-  float: right;
-  position: absolute;
+
 
 }
 

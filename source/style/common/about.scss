@@ -88,6 +88,7 @@
   background: #efeee9;
   justify-content: center;
   width: 50%;
+
 }
 
 .polza__i{
@@ -118,6 +119,17 @@ content:"\00B7 \00B7 \00B7"
   padding: 50px 0 0 0;
   color: #373e42;
   z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.kto__i{
+  height: 500px;
+  width: 100%;
+  position: relative;
+  top: -160px;
 }
 
 .logo__i{
@@ -125,51 +137,85 @@ content:"\00B7 \00B7 \00B7"
   top: -180px;
 }
 
-.foto__who_i{
-  position: relative;
-  padding: 20px 0;
-}
-
-.img__who_i{
+.wrap__foto_kto_i{
   height: 300px;
-  width: 300px;
+  width: auto;
+  position: relative;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
 }
 
-.zagolovok__who_i{
+.foto__kto_i{
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.img__kto_i{
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  height: auto;
+  width: 70%;
+
+  
+}
+
+.zagolovok__kto_i{
   font-family: Sansus_Webissimo;
   font-size: 35px;
   text-transform: uppercase;
   text-align: center;
-  padding: 0px 0 0 0;
+  padding: 50px 0 0 0;
   color: #5d5a55;
+  height: 100px;
+  width: 100%;
 }
 
-.tochki__zagolovok_who_i{
+.tochki__zagolovok_kto_i{
   position: relative;
-  top: -60px;
+  top: -120px;
   color: #bfbeba;
   text-align: center;
   font-size: 70px;
+  overflow: hidden;
 }
-.tochki__zagolovok_who_i::before{
+.tochki__zagolovok_kto_i::before{
 content:"\00B7 \00B7"
 }
-.tochki__zagolovok_who_i::after{
+.tochki__zagolovok_kto_i::after{
 content:"\00B7 \00B7"
 }
 
-.content__who_i{
-    padding: 8px 10px;
+.content__kto_i{
+  padding: 8px 10px;
+  line-height: 1.5;
+  top: 0px;
+  position: relative;
+  margin: 0px 50px;
+  text-transform: none;
 
 }
-.text__who_i{
+
+.text__kto_i{
   font-family: roboto-regular;
   font-size: 16px;
   color: #5d5a55;
   padding: 5px 0;
-  position: relative;
   top: -50px; 
   text-align: left;
+  position: relative;
 
 }
 
@@ -177,11 +223,14 @@ content:"\00B7 \00B7"
   font-family: Sansus_Webissimo;
   font-size: 35px;
   text-transform: uppercase;
-  text-align: center;
-  padding: 50px 100px 0 150px;
   color: #5d5a55;
   text-align: center;
+  margin: 0 auto;
   z-index: 1;
+  height: 100px;
+  width: 100%;
+  padding: 50px 0 0 0;
+    overflow: hidden;
 
 }
 
@@ -212,6 +261,7 @@ content:"\00B7 \00B7"
   padding: 0px 0px 0 2px;
   position: relative;
   top: 0px;
+  margin: 20px 30px;
 }
 
 .frontend{
@@ -310,7 +360,7 @@ figure {
   width: 380px;
   height: 280px;
   background-color: rgba(222, 201, 165, 0.55);
-  margin: 0% 32% 0 38%;
+  margin: 0 auto;
 
 }
 

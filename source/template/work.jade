@@ -54,16 +54,26 @@ body
             div.sait__work
               div.wrap__work
                 div.work
-                  img(src="assets/img/Work_1.png", data-number="0" alt="вв").img__work1
-                  img(src="assets/img/Work_2.png", data-number="1" alt="вв").img__work1_2
-                  img(src="assets/img/Work_3.png", data-number="2" alt="вв").img__work1_2
+                  ul.slider__list
+                    li.slider__item.active
+                      img(src="assets/img/Work_1.png", data-number="0" alt="вв").img__work1
+                    li.slider__item
+                      img(src="assets/img/Work_2.png", data-number="1" alt="вв").img__work1_2
+                    li.slider__item
+                      img(src="assets/img/Work_3.png", data-number="2" alt="вв").img__work1_2
+                  div.er
+                    a(href="#", alt="").slider__controls-top следующая
+                  div.er1
+                    a(href="#", alt="").slider__controls-bottom предыдущая
+
               div.nav_work
                   div.nav_work2
                     div.wap__img_work2
                       img(src="assets/img/Work_2.png", alt="вв").img__work2
                     div.wap__img_str_work2
-                      a(href="#", alt="dd").a1
+                      a(href="#", alt="dd").slider__controls-top
                         img(src="assets/img/portf_arrow_down.png", alt="вв").img__str_work2
+          
                   div.nav_work3
                     div.wap__img_work3
                       img(src="assets/img/Work_3.png", alt="вв").img__work3

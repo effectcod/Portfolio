@@ -55,7 +55,25 @@
 
 
 .foto__header_blog{
-  margin: 5% 0 0 45%;
+  height: 250px;
+  width: 300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.wrap__img_header_blog{
+  height: 141px;
+  width: 141px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: relative;
+  margin: 5% auto 0 auto;
 }
 
 .img__header_blog{
@@ -67,12 +85,20 @@
 
 .header__wp1{
   position: relative;
+  height: 120px;
+  width: 270px;
   top: -80px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: relative;
+  margin: 0 auto;
 }
 
 .img__header_zagolovok_blog{
   height: 120px;
   width: 270px;
+
 
 }
 
@@ -128,18 +154,18 @@
 }
 
 .side_bar__blog{
-  display: flex;
-  width: 400px;
+  height: auto;
+  width: 200px;
   text-align: right;
 }
 
 
 .content__blog{
-  display: flex;
-  align-items: flex-start;
-  flex-wrap: wrap;
   padding: 0 50px;
-
+  width: 70%;
+  height: auto;
+  float: left;
+  overflow: hidden;
 }
 
 
@@ -154,7 +180,8 @@
 
 
 .blog__aticle1{
-  padding: 0 0 10px 0;
+  margin: 0 20px 20px;
+  display: block;
 }
 
 .zagolovok__aticleblog1{
@@ -172,6 +199,7 @@
 
 .text__aticleblog1{
   padding: 20px 0;
+  line-height: 1.5;
 }
 
 .text__aticleblog1_1{
@@ -179,19 +207,31 @@
   font-size: 16px;
   color: #5d5a55;
   padding: 5px 0;
-  
 }
 
 .foto__aticleblog1{
   padding: 10px 0;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70%;
+  width: 100%;
+  position: relative;
 }
 
 .img__aticleblog1{
-  padding: 0 0 30px 0;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 gor__line{
-  padding: 10px 0;
+
+  position: relative;
 }
 hr{
   size: 2;

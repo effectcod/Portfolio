@@ -9,23 +9,23 @@ body
         <!--[if lt IE 7]>
         <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
         <![endif]-->
-        .header__blog
-          div.soc__icon
-            include common/_main1
-            a(href="#", alt="dd")
+        .header__work
+          include common/_main1
+          div.humb
+            a(href="#", alt="dd").ssilka 
               +use("hamburger", "svg-hamburger-dims")
+
           div.foto__header_blog
-            img(src="assets/img/2.png", alt="вв").img__header_blog
-          div.zagolovok__blog Блог
+            div.wrap__img_header_blog
+              img(src="assets/img/2.png", alt="вв").img__header_blog
+            div.zagolovok__blog Блог
             div.header__wp1
               img(src="assets/img/blog_header.png", alt="вв").img__header_zagolovok_blog
-          div.descr_header_blog Статьи, которые я написал
+            div.descr_header_blog Статьи, которые я написал
           div.box-tranigle2
             svg.traingle(xmlns='http://www.w3.org/2000/svg', viewBox="0 0 1000 85" preserveaspectratio='none')
               <polygon fill="#fbf8f1" points="0,0 0,86 500.8,86 500.8,75.5"/>
               <polygon fill="#fbf8f1" points="1000,0 1000,86 500,86 500,75.5"/>
-
-
 
           
         div.container_blog
@@ -56,7 +56,7 @@ body
                   div.text__aticleblog1_1 Таким образом начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке направлений прогрессивного развития. Разнообразный и богатый опыт новая модель организационной деятельности играет важную роль в формировании новых предложений. Товарищи! новая модель организационной деятельности играет важную роль в формировании систем массового участия.
                   div.text__aticleblog1_1 Не следует, однако забывать, что укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Идейные соображения высшего порядка, а также рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Товарищи! постоянный количественный рост и сфера нашей активности способствует подготовки и реализации модели развития. С другой стороны рамки и место обучения кадров влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.
                 div.foto__aticleblog1
-                img(src="assets/img/Layer-1.png", alt="вв").img__aticleblog1
+                  img(src="assets/img/Layer-1.png", alt="вв").img__aticleblog1
                 div.gor__line
                   hr
 

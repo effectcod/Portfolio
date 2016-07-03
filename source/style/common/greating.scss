@@ -6,6 +6,50 @@
     font-family: roboto-medium;
     src: url(../fonts/roboto-medium.ttf);}
 
+@font-face {
+    font-family: fontawesome-webfont;
+    src: url(../fonts/fontawesome-webfont.ttf);}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ECA839;
+  z-index: 80;
+  position: absolute;
+}
+
+#status {
+  width: auto;
+  height: 650px;
+  position: absolute;
+  background: url(../img/desert_preloader.gif) no-repeat center center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 81;
+}
+
+.wrap__index{
+  display: none;
+}
+
+
+.loader-bar{
+  width: 1%;
+  height: 2px;
+  background: #ECA839;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 82;
+}
+
 
 
 .flip {
@@ -291,20 +335,30 @@
   font-family: roboto-regular, sans-serif;
   color: #373e42;
   font-size: 16px;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 60px;
   width: 300px;
-  opacity: 0.5;
+  height: 45px;
+
+  border-radius: 5px;
+  border: none;
+  background: #fff;
 }
 
 .check_robot{
-  padding: 20px 0 30px 0;
+  padding: 20px 0 10px 0;
 }
 
 .buttons__line1{
-  padding: 50px 0;
+  padding: 25px 0 0 0;
 }
 
 .no__robot{
+  font-family: roboto-regular, sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+
+.no__robot_radio{
   font-family: roboto-regular, sans-serif;
   color: #fff;
   font-size: 16px;
@@ -314,9 +368,7 @@
   padding: 15px 0 10px 0;
 }
 
-.control_robot{
 
-}
 
 .button__general{
   height: 45px;
@@ -361,6 +413,92 @@
   top: 120px;
   padding: 0;
 }
+
+.fa{
+  font-size: 15px;
+  width: 45px;
+  height: 45px;
+  top: 15px;
+  position: relative;
+
+
+}
+
+.input-group-addon {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    color: #c4cbcd;
+    padding-top: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #efefe9;
+
+}
+
+input[type=checkbox] {display: none;}
+input[type="checkbox"] + label span {
+  display:inline-block;
+  width:20px;
+  height:20px;
+  margin: -1px 4px 0 0;
+  vertical-align:middle;
+  background:url(../img/5.png) left top no-repeat;
+  cursor:pointer;
+}
+
+input[type="checkbox"]:checked + label span {
+  background:url(../img/6.png) top no-repeat;
+  color: #000000;
+}
+
+
+
+
+
+.control_robot1{
+  display: none;
+}
+
+.radio-custom {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    position: relative;
+}
+
+.radio-custom,{
+  background: #fff;
+}
+
+.radio-custom,
+.no__robot_radio {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.control_robot1:checked + .radio-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background: #e7a731;
+    border-radius: 1px;
+
+}
+
+.radio-custom,
+.control_robot1:checked + .radio-custom::before {
+    border-radius: 50%;
+    
+}
+
+
 
 @import 'common/svg-sprite.scss';
 

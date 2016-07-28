@@ -8,13 +8,29 @@ body
       <!--[if lt IE 7]>
       <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
       <![endif]-->
-      .header__work
+      .header__about
+        div.hero__bg
+          img(src="assets/img/sand.jpg" alt="").img__hero_bg
           include common/_main1
-          div.humb
-            a(href="#", alt="dd").ssilka 
-              +use("hamburger", "svg-hamburger-dims")
+        div.humb
+            button.toggle_mnu
+              span.sandwich
+                span.sw-topper
+                span.sw-bottom
+                span.sw-footer
+        nav.top__mnu
+          div.wrapper__top_mnu
+            ul.top__mnu_list
+              li
+                a(href="work.html") Мои работы
+              li
+                a(href="about.html") Обо мне
+              li
+                a(href="blog.html") Блог
+              li
+                a(href="autorization.html") Авторизация
           
-          div.wrapper__foto
+        div.wrapper__foto
             div.foto__header_work
               img(src="assets/img/2.png", alt="вв").img__header_work
             div.fio__header_work Олег Михалев
@@ -22,9 +38,9 @@ body
             div.strelka
               a(href="#", alt="dd")
                 img(src="assets/img/arrow_down.png", alt="вв").img__strelka
-          div.header__fon_zagolovka
+        div.header__fon_zagolovka
             img(src="assets/img/portfolio_header.png", alt="вв").img__header_wp
-          div.box-tranigle
+        div.box-tranigle
             svg.traingle(xmlns='http://www.w3.org/2000/svg', viewBox="0 0 1000 85" preserveaspectratio='none')
               <polygon fill="#efeee9" points="0,0 0,86 500.8,86 500.8,75.5"/>
               <polygon fill="#efebe0" points="1000,0 1000,86 500,86 500,75.5"/>
@@ -52,7 +68,7 @@ body
               div.content_polza Больше всего меня привлекает Frontend разработка, но я также знаком и могу решать не сложные задачи на Backend. Но давайте по порядку.
               div.frontend Frontend
               div.Front__scil
-                ul
+                ul.wrap_scill
                   li.skill__item
                     figure(data-percent="45").chart
                       figcaption
@@ -122,7 +138,7 @@ body
 
 
 
-            
+
 
 
 
@@ -134,8 +150,9 @@ body
     div.footer1
           
           div.cont__f1
-            div.cont__f1_1 Этот сайт я сделал в рамках обучения в Школе <br> онлайн образования LoftSchool.
-            div.cont__f1_2 &#169 Олег Михалев <br> Сделано с любовью в LoftSchool | 2016
+            div.cont__f1_1 Этот сайт я сделал в рамках обучения в <br>Школе онлайн образования LoftSchool.
+            div.cont__f1_2 &#169 Олег Михалев
+            div.cont__f1_3 Сделано с любовью в LoftSchool | 2016
 
 
           div.cont__f2
@@ -144,7 +161,7 @@ body
               a(href="about.html", alt="dd").menu Обо мне
               a(href="blog.html", alt="dd").menu Блог
               a(href="autorization.html", alt="dd").menu Авторизация
-              div.cont__f2_2
+            div.cont__f2_2
                 include common/_main
 
 

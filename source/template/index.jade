@@ -4,36 +4,76 @@ html
 
   include common/_head
 
-  body
-   div#preloader
-    div#status &nbsp
-  .loader-bar
-  .wrap__index
+body
+  div.cont__ff
+    div#preloader
+      div#status &nbsp
+    .loader-bar
+    .wrap__index
 
-    <!--[if lt IE 7]>
-    <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
-    <![endif]-->
+      <!--[if lt IE 7]>
+      <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
+      <![endif]-->
 
-   
+     
 
-    .header
-      div.btn__auto
-        a(href="autorization.html", alt="dd")
-          button.button__autoriz Авторизоваться
-      div.container__item
-        div.content__item
-          div.wrapper__content
-            img(src="assets/img/2.png", alt="вв").img_foto
-            div.fio Олег Михалев
-            div.descr Личный сайт веб разработчика
-            div.svg__line
-              include common/_main
-            div.buttons__line
-              a(href="work.html", alt="dd").ssilka
-                button.button__mywork Мои работы
-              a(href="about.html", alt="dd").ssilka
-                button.button__aboutme Обо мне
-              a(href="blog.html", alt="dd").ssilka
-                button.button__blog Блог
-      div.rectangle
-      div.text   &#169 Олег Михалев | создано с любовью в LoftSchool | 2016
+      .header
+        .head_fon
+        div.btn__auto
+          a(href="#", alt="dd").btn__autorization
+            button.button__autoriz Авторизоваться
+        div.container__item
+          div.content__item
+            div.wrapper__content
+              div.flip
+                div.flip__container
+                  div.flip__front
+                        img(src="assets/img/2.png", alt="вв").img_foto
+                        div.fio Олег Михалев
+                        div.descr Личный сайт веб разработчика
+                        div.svg__line
+                          include common/_main
+                        div.buttons__line
+                          a(href="work.html", alt="dd").ssilka
+                            button.button__mywork Мои работы
+                          a(href="about.html", alt="dd").ssilka
+                            button.button__aboutme Обо мне
+                          a(href="blog.html", alt="dd").ssilka
+                            button.button__blog Блог
+                  
+
+                  div.flip__back
+                      div.container__item
+                        div.content__item
+                          div.wrapper__content
+                            div.autoriz Авторизуйтесь
+                            div.inp__login
+                              span.input-group-addon
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                              input(type="text" name="login" placeholder="Логин" required).login
+                            div.inp__login
+                              span.input-group-addon
+                                <i class="fa fa-key" aria-hidden="true"></i>
+                              input(type="text" name="password" placeholder="Пароль" required).login
+                            div.check_robot
+                              input(type="checkbox" id="c1" name="robot" value="a1").control_robot
+                              label(for="c1").no__robot <span></span>&nbsp; Я человек
+                            div.no__robot Вы точно не робот?
+                            div.radio_robot
+                              label
+                                input(type="radio" id="c2" name="robot" value="a1").control_robot1
+                                <span class="radio-custom"></span>
+                                label(for="c2").no__robot_radio <span></span> Да
+                              label
+                                input(type="radio" id="c3" name="robot" value="a1").control_robot1
+                                <span class="radio-custom"></span>
+                                label(for="c3").no__robot_radio <span></span> Не уверен
+
+
+                            div.buttons__line1
+                              a(href="index.html", alt="dd").ssilka
+                                button.button__general На главную
+                              a(href="about.html", alt="dd").ssilka
+                                button.button__voity Войти
+  div.footer__ff
+    div.text   &#169 Олег Михалев | создано с любовью в LoftSchool | 2016

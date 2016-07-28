@@ -9,99 +9,182 @@ body
       <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
       <![endif]-->
       .header__work
+        div.hero__bg
+          img(src="assets/img/sand.jpg" alt="").img__hero_bg
           include common/_main1
-          div.humb
-            a(href="#", alt="dd").ssilka 
-              +use("hamburger", "svg-hamburger-dims")
+        div.humb
+            button.toggle_mnu
+              span.sandwich
+                span.sw-topper
+                span.sw-bottom
+                span.sw-footer
+        nav.top__mnu
+          div.wrapper__top_mnu
+            ul.top__mnu_list
+              li
+                a(href="work.html") Мои работы
+              li
+                a(href="about.html") Обо мне
+              li
+                a(href="blog.html") Блог
+              li
+                a(href="autorization.html") Авторизация
           
-          div.wrapper__foto
+        div.wrapper__foto
             div.foto__header_work
               img(src="assets/img/2.png", alt="вв").img__header_work
             div.fio__header_work Олег Михалев
             div.descr_header_work Личный сайт веб разработчика
-            div.strelka
-              a(href="#", alt="dd")
-                img(src="assets/img/arrow_down.png", alt="вв").img__strelka
-          div.header__fon_zagolovka
+
+
+        div.header__fon_zagolovka
             img(src="assets/img/portfolio_header.png", alt="вв").img__header_wp
-          div.box-tranigle
+        div.strelka
+              a(href="#box1", alt="dd").st 
+                img(src="assets/img/arrow_down.png", alt="вв").img__strelka
+        div.box-tranigle
             svg.traingle(xmlns='http://www.w3.org/2000/svg', viewBox="0 0 1000 85" preserveaspectratio='none')
               <polygon fill="#fff" points="0,0 0,86 500.8,86 500.8,75.5"/>
               <polygon fill="#fff" points="1000,0 1000,86 500,86 500,75.5"/>
           
 
-      div.block__my_work
+      div.block__my_work#box1
         div.zagolovok__work
           div.zagolovok__my_work Мои работы
           div.logo__img_work
-            img(src="assets/img/works_header2.png", alt="вв").img__logo_work
+            div.wrap__logo_work
+              img(src="assets/img/works_header2.png", alt="вв").img__logo_work
 
         div.block__slider
             div.descr__work
-              div.wrap__descr_work
-                div.name__work Сайт школы онлайн образования
-                div.line
-                  hr
-                div.desc__works 
-                  div.descr__text HTML, CSS, JAVASCRIPT ИЛИ КАКОЕ-ТО ДРУГОЕ ДЛИННОЕ НАЗВАНИЕ ИЛИ ЕЩЕ КАКОЕ-ТО ДРУГОЕ ДЛИННОЕ НАЗВАНИЕ
-                div.line
-                  hr
-                div.btn__see_works
-                  a(href="work.html", alt="dd")
-                    button.btn__see_work Посмотреть сайт
+              ul.wrap__descr_work
+                li.slider__info-item
+                  div.name__work Умный браслет
+                  div.line
+                    hr
+                  div.desc__works 
+                    div.descr__text HTML, CSS, JAVASCRIPT, JQUERY, GULP, SAAS 
+                  div.line
+                    hr
+                  div.btn__see_works
+                    a(href="work.html", alt="dd")
+                      button.btn__see_work Посмотреть сайт
 
+                li.slider__info-item
+                  div.name__work Компания Твой комфорт
+                  div.line
+                    hr
+                  div.desc__works 
+                    div.descr__text HTML, CSS, JAVASCRIPT, JQUERY, GULP, SAAS 
+                  div.line
+                    hr
+                  div.btn__see_works
+                    a(href="work.html", alt="dd")
+                      button.btn__see_work Посмотреть сайт
 
-            div.sait__work
-              div.wrap__work
+                li.slider__info-item
+                  div.name__work Школа онлайн образования
+                  div.line
+                    hr
+                  div.desc__works 
+                    div.descr__text HTML, CSS, JAVASCRIPT, JQUERY, GULP, SAAS 
+                  div.line
+                    hr
+                  div.btn__see_works
+                    a(href="work.html", alt="dd")
+                      button.btn__see_work Посмотреть сайт
+
+                li.slider__info-item
+                  div.name__work Йога
+                  div.line
+                    hr
+                  div.desc__works 
+                    div.descr__text HTML, CSS, JAVASCRIPT, JQUERY, GULP, SAAS 
+                  div.line
+                    hr
+                  div.btn__see_works
+                    a(href="work.html", alt="dd")
+                      button.btn__see_work Посмотреть сайт
+
+                li.slider__info-item
+                  div.name__work Дизайн интерьеров
+                  div.line
+                    hr
+                  div.desc__works 
+                    div.descr__text HTML, CSS, JAVASCRIPT, JQUERY, GULP, SAAS 
+                  div.line
+                    hr
+                  div.btn__see_works
+                    a(href="work.html", alt="dd")
+                      button.btn__see_work Посмотреть сайт
+
+                li.slider__info-item.active
+                  div.name__work Блог автоновостей
+                  div.line
+                    hr
+                  div.desc__works 
+                    div.descr__text HTML, CSS, JAVASCRIPT, JQUERY, GULP, SAAS 
+                  div.line
+                    hr
+                  div.btn__see_works
+                    a(href="work.html", alt="dd")
+                      button.btn__see_work Посмотреть сайт
+
+            
+            div.wrap__work
                 div.work
                   ul.slider__list
                     li.slider__item.active
-                      img(src="assets/img/Work_1.png", data-number="0" alt="вв").img__work1
+                      img(src="assets/img/Work_1a.png", data-number="0" alt="вв").img__work1
                     li.slider__item
-                      img(src="assets/img/Work_2.png", data-number="1" alt="вв").img__work1_2
+                      img(src="assets/img/Work_2a.png", data-number="1" alt="вв").img__work1_2
+                    li.slider__item
+                      img(src="assets/img/Work_3a.png", data-number="2" alt="вв").img__work1_2
+                    li.slider__item
+                      img(src="assets/img/Work_1.png", data-number="2" alt="вв").img__work1_2
+                    li.slider__item
+                      img(src="assets/img/Work_2.png", data-number="2" alt="вв").img__work1_2
                     li.slider__item
                       img(src="assets/img/Work_3.png", data-number="2" alt="вв").img__work1_2
-                  div.er
-                    a(href="#", alt="").slider__controls-top следующая
-                  div.er1
-                    a(href="#", alt="").slider__controls-bottom предыдущая
 
-              div.nav_work
+            div.nav_work
                   div.nav_work2
                     div.wap__img_work2
-                      img(src="assets/img/Work_2.png", alt="вв").img__work2
+                      img(src="assets/img/Work_2a.png", alt="вв").img__work2
                     div.wap__img_str_work2
                       a(href="#", alt="dd").slider__controls-top
                         img(src="assets/img/portf_arrow_down.png", alt="вв").img__str_work2
           
                   div.nav_work3
                     div.wap__img_work3
-                      img(src="assets/img/Work_3.png", alt="вв").img__work3
+                      img(src="assets/img/Work_3a.png", alt="вв").img__work3
                     div.wap__img_str_work2
-                      a(href="#", alt="dd").a1
+                      a(href="#", alt="dd").slider__controls-bottom
                         img(src="assets/img/portf_arrow_up.png", alt="вв").img__str_work2
 
       div.otzivi
         div.wrap__zagolovok_otzivi
           div.zagolovok_otzivi Что обо мне говорят
           div.logo__img_about
-            img(src="assets/img/about_header.png", alt="вв").img__logo_work
+            div.wrap__logo_img_about
+              img(src="assets/img/about_header.png", alt="вв").img__logo_about
 
         div.block__otzivi
-          div.otziv__1 
-            p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
-          div.otziv__2
-            p Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
-
-        div.otziv_man
-              div.foto_dima
+          div.otziv__1
+            div.otziv_dim
+              p Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+            div.foto_dima
                 img(src="assets/img/3.png", alt="вв").img__dima
-              div.name_dima
+            div.name_dima
                 p.d__k <strong>Ковальчук Дмитрий</strong> <br> Основатель Loftschool
-              div.foto_zar
-                img(src="assets/img/zar.png", alt="вв").img__dima
-              div.name_zar
-                p.z__z <strong> Зар Захаров </strong><br> Главный преподаватель
+
+          div.otziv__1
+            div.otziv_dim
+              p Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+            div.foto_dima
+              img(src="assets/img/zar.png", alt="вв").img__dima
+            div.name_dima
+              p.z__z <strong> Зар Захаров </strong><br> Главный преподаватель
 
       div.block_form
           div.wrap__form
@@ -122,9 +205,9 @@ body
         
     div.footer
       div.cont__f1
-        div.cont__f1_1 Этот сайт я сделал в рамках обучения в Школе <br> онлайн образования LoftSchool.
-        div.cont__f1_2 &#169 Олег Михалев <br> Сделано с любовью в LoftSchool | 2016
-
+        div.cont__f1_1 Этот сайт я сделал в рамках обучения в <br>Школе онлайн образования LoftSchool.
+        div.cont__f1_2 &#169 Олег Михалев
+        div.cont__f1_3 Сделано с любовью в LoftSchool | 2016
 
       div.cont__f2
         div.cont__f2_1 
@@ -132,7 +215,7 @@ body
           a(href="about.html", alt="dd").menu Обо мне
           a(href="blog.html", alt="dd").menu Блог
           a(href="autorization.html", alt="dd").menu Авторизация
-          div.cont__f2_2
+        div.cont__f2_2
             include common/_main
 
 

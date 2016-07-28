@@ -9,11 +9,25 @@ body
         <!--[if lt IE 7]>
         <p class="browsehappy">Вы используете <strong>устаревший</strong> браузер. Пожалуйста <a href="http://browsehappy.com/">обновите его</a></p>
         <![endif]-->
-        .header__work
+        .header__blog
           include common/_main1
           div.humb
-            a(href="#", alt="dd").ssilka 
-              +use("hamburger", "svg-hamburger-dims")
+              button.toggle_mnu
+                span.sandwich
+                  span.sw-topper
+                  span.sw-bottom
+                  span.sw-footer
+          nav.top__mnu
+            div.wrapper__top_mnu
+              ul.top__mnu_list
+                li
+                  a(href="work.html") Мои работы
+                li
+                  a(href="about.html") Обо мне
+                li
+                  a(href="blog.html") Блог
+                li
+                  a(href="autorization.html") Авторизация
 
           div.foto__header_blog
             div.wrap__img_header_blog
@@ -31,22 +45,23 @@ body
         div.container_blog
             div.side_bar__blog
               nav.nav__side_bar
+                .button__sidebar
                 ul.menu__side_bar
                   li.menu_item
                     div.m1
-                      a(href="#", alt="dd").menu__blog Самое важное в SASS
+                      a(href="#sec1" data-id="0" id="item0").menu__blog Самое важное в SASS
                   li.menu_item
                     div.m1
-                      a(href="#", alt="dd").menu__blog Приёмы в вёрстке, без которых не обходится ни один сайт
+                      a(href="#sec2" data-id="1" id="item1").menu__blog Приёмы в вёрстке, без которых не обходится ни один сайт
                   li.menu_item
                     div.m1
-                      a(href="#", alt="dd").menu__blog Самый необходимый набор Gulp плагинов
+                      a(href="#sec3" data-id="2" id="item2").menu__blog Самый необходимый набор Gulp плагинов
                   li.menu_item
                     div.m1
-                      a(href="#", alt="dd").menu__blog Почему я выбрал Jade
+                      a(href="#sec4" data-id="3" id="item3").menu__blog Почему я выбрал Jade
                   li.menu_item
                     div.m1
-                      a(href="#", alt="dd").menu__blog Адаптивная верстка
+                      a(href="#sec5" data-id="4" id="item4").menu__blog Адаптивная верстка
 
             div.content__blog
               div.blog__aticle1
@@ -110,8 +125,10 @@ body
     div.footer
           
           div.cont__f1
-            div.cont__f1_1 Этот сайт я сделал в рамках обучения в Школе <br> онлайн образования LoftSchool.
-            div.cont__f1_2 &#169 Олег Михалев <br> Сделано с любовью в LoftSchool | 2016
+            div.cont__f1_1 Этот сайт я сделал в рамках обучения в <br>Школе онлайн образования LoftSchool.
+            div.cont__f1_2 &#169 Олег Михалев
+            div.cont__f1_3 Сделано с любовью в LoftSchool | 2016
+
 
 
           div.cont__f2
@@ -120,7 +137,7 @@ body
               a(href="about.html", alt="dd").menu Обо мне
               a(href="blog.html", alt="dd").menu Блог
               a(href="autorization.html", alt="dd").menu Авторизация
-              div.cont__f2_2
+            div.cont__f2_2
                 include common/_main
 
 

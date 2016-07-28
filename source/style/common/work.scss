@@ -19,19 +19,27 @@
     src: url(../fonts/MyriadPro-Regular.otf);}
 
 
-
-.header__work{
-  background-image: url(../img/sand.jpg);
+.hero__bg{
   height: 650px;
   width: 100%;
-  background-size: cover;
+  position: absolute;
+
+  img{
+  height: 650px;
+  width: auto;
+  min-width: 1000px;
+  }
+}
+
+.img__hero_bg{
+
+  }
+
+.header__work{
+  height: 100vh;
+  min-height: 650px;
   position: relative;
   
-  top: 0;
-  left: 0;
-  height: 100vh;
-  background-position: left top;
-  background-repeat: no-repeat;
 }
 
 ul{
@@ -46,18 +54,201 @@ ul{
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  top: 10px;
-  left: 20px;
-  width: 150px;
+  top: -100%;
+  left: rem(20px);
+  width: rem(180px);
 }
 
 .humb{
-  width: 65px;
-  height: 65px;
+  width: rem(65px);
+  height: rem(65px);
   position: absolute;
   right: 20px;
   top: 5px;
+  border: none;
   }
+
+
+.toggle_mnu{
+  width: rem(60px);
+  height: rem(60px);
+  position: fixed;
+  z-index: 100;
+  border: none;
+  background: transparent;
+  right: rem(50px);
+  top: rem(20px);
+  cursor: pointer;
+    span
+      {display: block;}
+}
+
+
+.sandwich{
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  top: 8px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 200;
+}
+
+.sw-topper{
+  position: relative;
+  top: 0;
+  width: 28px; 
+  height: 3px;
+  background: #cd8920;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s;
+  display: block;
+}
+
+.sw-bottom{
+  position: relative;
+  width: 28px;
+  height: 3px;
+  top: 3px * 2.2;
+  background: #cd8920;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s;
+}
+
+.sw-footer{
+  position: relative;
+  width: 28px;
+  height: 3px;
+  top: 3px * 4.5;
+  background: #cd8920;
+  border: none;
+  border-radius: 4px 4px 4px 4px;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+}
+
+.sandwich.active{
+  .sw-topper{
+    top: 9px;
+    border: none;
+    transform: rotate(-45deg);
+    }
+
+  .sw-bottom{
+    top: 6px;
+    border: none;
+    transform: rotate(45deg);
+    }
+
+  .sw-footer{
+    opacity: 0;
+    top: 0;
+    border: none;
+    transform: rotate(180deg);
+    }
+}
+
+
+
+.top__mnu{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #e8ae43;
+  z-index: 500;
+  right: 0;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  display: none;
+  opacity: 0.9;
+  text-align: center;
+  margin: auto;
+  
+}
+
+.wrapper__top_mnu{
+  right: 0;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: rem(300px);
+  position: fixed;
+}
+
+.top__mnu_list{
+  width: 100%;
+  height: rem(300px);
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  position: relative;
+  text-align: center;
+}
+
+.top__mnu ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top__mnu li{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top__mnu a{
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: roboto-regular, sans serif;
+  opacity: 0.8;
+  position: relative;
+  height: 60px;
+  outline: none;
+    span{
+      position: relative;
+      top: -40px;
+      left: 0;
+      height: 100%;
+      }
+    &:hover{
+      color: #2341d9;
+      }
+}
+
+
+.top__mnu_list a:hover::before,
+.top__mnu_list a:hover::after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 10px;
+    background-image: url("../img/Ellipse-4.png");
+    margin: 0 10px;
+}
+
+.top__mnu_list a:hover:after {
+transform: rotateY(180deg);
+}
+
+
+
+
+
 
 
 
@@ -92,38 +283,39 @@ a{
 
 li{
   display: inline;
-  height: 50px;
-  width: 50px;
+  height: rem(50px);
+  width: rem(50px);
 }
 
 
 
 .header__fon_zagolovka{
-  position: relative;
-  top: -180px;
+  position: absolute;
+  top: 20%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
+  transforme: TranslateY(-20%);
+  text-align: center;
 }
 
 .img__header_wp{
-  height: auto;
-  width: 100%;
+  display: inline-block;
+  width: 70%;
 }
 
 
 .wrapper__foto{
   position: relative;
   height: auto;
-  width: 320px;
-  top: 0;
+  width: rem(320px);
+  top: 30%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: auto;
   transform: translateY(50px);
-
 }
 
 .foto__header_work{
@@ -133,25 +325,25 @@ li{
   right: 0;
   bottom: 0;
   margin: auto;
-  height: 141px;
-  width: 141px;
+  height: rem(141px);
+  width: rem(141px);
 }
 
 .img__header_work{
-  height: 141px;
-  width: 141px;
+  height: rem(141px);
+  width: rem(141px);
   border-radius: 50% 50%;
 }
 
 
 .fio__header_work{
   font-family: roboto-medium, sans serif;
-  font-size: 35px;
+  font-size: rem(35px);
   color: #fff;
   position: relative;
-  width: 300px;
-  height: 20px;
-  top: 20px;
+  width: rem(300px);
+  height: rem(20px);
+  top: rem(20px);
   text-align: center;
 }
 
@@ -161,26 +353,26 @@ li{
   color: #fff;
   position: relative;
   text-align: center;
-  width: 300px;
-  height: 20px;
-  top: 50px;
+  width: rem(300px);
+  height: rem(20px);
+  top: rem(50px);
 }
 
 .strelka{
   cursor: pointer;
   position: relative;
-  top: 100px;
+  top: rem(300px);
   left: 0px;
   right: 0;
   bottom: 0;
   margin: 0 auto;
-  height: 16px;
-  width: 26px;
+  height: rem(16px);
+  width: rem(26px);
 }
 
 .img__strelka{
-  height: 16px;
-  width: 26px;
+  height: rem(16px);
+  width: rem(26px);
   cursor: pointer;
 }
 
@@ -196,43 +388,71 @@ li{
 
 .zagolovok__work{
   position: relative;
-  top: 50px;
+  top: rem(50px);
   left: 0px;
   right: 0;
   bottom: 0;
   margin: 0 auto;
-  height: 50px;
-  width: 500px;
+  height: rem(50px);
+  width: rem(500px);
+    @include phone{
+      width: rem(300px);
+    }
 }
 
 .zagolovok__my_work{
   font-family: Sansus_Webissimo;
-  font-size: 63px;
+  font-size: rem(63px);
   text-transform: uppercase;
   text-align: center;
   z-index: 2;
-  height: 50px;
-  width: 400px;
+  height: rem(50px);
+  width: 100%;
+  top: 0px;
+  position: absolute;
+    @include phone{
+      font-size: rem(38px);
+      top: 30px;
+      position: relative;
+    }
 }
 
 
 
 .logo__img_work{
+  
+  height: rem(150px);
+  width: 100%;
+  transform: translateY(-45px);
+
+}
+
+.wrap__logo_work{
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  height: ayto;
+  width: 100%;
+  opacity: 0.5;
+  display: block;
+    @include phone{
+      top: 0;
+    }
+}
+
+.img__logo_work{
+  height: auto;
+  width: 100%;
   position: absolute;
   top: 0px;
   left: 0px;
   right: 0;
   bottom: 0;
   margin: 0 auto;
-  height: 150px;
-  width: 500px;
-  transform: translateY(-45px);
-  opacity: 0.5;
-}
 
-.img__logo_work{
-  height: 150px;
-  width: 500px;
 }
 
 
@@ -246,37 +466,51 @@ li{
 
 .block__slider{
   position: relative;
-  top: 140px;
-  height: 500px;
+  top: rem(140px);
+  height: rem(650px);
   width: 100%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0px auto;
+    @include phone{
+      height: auto;
+    }
 
 }
 
 
+
 .descr__work{
+  @extend %clearfix;
   display: inline-block;
   background: #f4f0e9;
   width: 50%;
-  height: 500px;
+  height: rem(650px);
+  float: left;
+    @include phone{
+      float: none;
+      width: 100%;
+      height: rem(400px);
+      }
 }
 
 .sait__work{
   background: #ebe5db;
-  height: 500px;
+  height: rem(500px);
   width: 50%;
   display: inline-block;
   position: absolute;
+}
 
+.st {
+  cursor: pointer;
 }
 
 
 .wrap__descr_work{
-  width: 320px;
-  height: 350px;
+  width: 100%;
+  height: rem(350px);
   padding: 0;
   top: 0;
   left: 0;
@@ -289,7 +523,7 @@ li{
 
 .name__work{
   font-family: Sansus_Webissimo;
-  font-size: 35px;
+  font-size: rem(35px);
   text-transform: uppercase;
   color: #5d5a55;
   text-align: center;
@@ -298,11 +532,14 @@ li{
   right: 0;
   bottom: 0;
   margin: 10px auto;
-  height: 50px;
-  width: 320px;
+  height: rem(50px);
+  width: 100%;
   position: relative;
-  padding: 0 0 50px 0;
+  padding: 0 0 rem(50px) 0;
   display: inline-block;
+    @include tablet{
+      font-size: rem(25px);
+    }
 }
 
 hr{
@@ -315,14 +552,21 @@ hr{
   top: 15px;
   text-align: center;
   height: auto;
-  width: 320px;
+  width: auto;
   padding: 0 0 20px 0;
+    @include tablet{
+
+    }
 }
+
 .descr__text{
   font-family: roboto-medium, sans-serif;
   font-size: 16px;
   color: #cd8920;
-  
+  padding: 0 30px;
+    @include tablet{
+      font-size: rem(14px);
+    }
 }
 
 .line{
@@ -336,52 +580,86 @@ hr{
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 20px auto;
-  height: 45px;
-  width: 200px;
+  margin: rem(20px) auto;
+  height: rem(45px);
+  width: rem(200px);
 
 }
 
 .btn__see_work{
-  height: 45px;
-  width: 200px;
+  height: rem(45px);
+  width: rem(200px);
   background-color: #efab26;
   border: none;
   font-family: roboto-medium, sans-serif;
   color: #fff;
-  font-size: 16px;
+  font-size: rem(16px);
   cursor: pointer;
   border-radius: 5px;
 }
 
 
-.wrap__work{
-  height: 350px;
-  width: 500px;
+.slider__info-item.active{
+  display: block;
 }
+
+.slider__info-item{
+  display: none;
+  top: rem(50px);
+  left: 0;
+  position: absolute;
+  width: 50%;
+  text-align: center;
+    @include phone{
+      width: 100%;
+    }
+}
+
+
+
+.wrap__work{
+  height: rem(450px);
+  width: 50%;
+
+  float: right;
+  background: #ebe5db;
+    @include phone{
+      width: 100%;
+      float: none;
+      height: rem(400px);
+      top: -5px;
+      position: relative;
+      }
+}
+
+
 
 .work{
   position: absolute;
   top: 0px;
-  left: 0;
-  right: 0;
   bottom: 0;
   margin: 0px auto;
   height: 70%;
-  width: 80%;
+  width: 50%;
   display: inline-block;
   overflow: hidden;
+    @include phone{
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
 }
 
 
+
 .img__work1{
-  height: 100%;
+  height: auto;
   width: 100%;
   top: 0px;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0px auto;
+  margin: auto;
   position: absolute;
 }
 
@@ -389,41 +667,51 @@ hr{
   position: absolute;
   top: 0px;
   left:0px;
-  height: 100%;
+  height: auto;
   width: 100%;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0px auto;
+  margin: auto;
 
 }
 
 
 .nav_work{
-  height: 150px;
-  width: 100%;
+  height: rem(200px);
+  width: 50%;
   position: relative;
   top: 0px;
+  float: right;
+  display: inline-block;
+  background: #ebe5db;
+    @include phone{
+      float: none;
+      width: 100%;
+      top: -5px;
+      position: relative;
+    }
+
 
 }
 
 
 .nav_work2{
-  height: 150px;
+  height: rem(150px);
   width: 50%;
   display: inline-block;
   float: left;
   position: relative;
-  top: -25px;
+
 }
 
 .nav_work3{
-  height: 150px;
+  height: rem(150px);
   width: 50%;
   display: inline-block;
   float: right;
   position: relative;
-  top: -25px;
+
 }
 
 .wap__img_work2{
@@ -453,7 +741,7 @@ hr{
 }
 
 .img__work2{
-  height: 100%;
+  height: auto;
   width: 100%;
   opacity: 0.5;
   position: relative;
@@ -461,12 +749,12 @@ hr{
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0px auto;
+  margin: auto;
   vertical-align: middle;
 }
 
 .img__work3{
-  height: 100%;
+  height: auto;
   width: 100%;
   opacity: 0.5;
   position: relative;
@@ -474,21 +762,21 @@ hr{
   left: 0;
   right: 0;
   bottom: 0;
-  margin: 0px auto;
+  margin: auto;
   vertical-align: middle;
 }
 
 .er{
   position: relative;
-  top: 300px;
+  top: rem(300px);
   float: left;
   z-index: 201;
 }
 
 .er1{
   position: relative;
-  top: 300px;
-  padding: 0 0 0 200px;
+  top: rem(300px);
+  padding: 0 0 0 rem(200px);
     z-index: 200;
 }
 
@@ -525,9 +813,9 @@ top: 0%;
 
 .wap__img_str_work2{
   height: auto;
-  width: 50px;
+  width: rem(50px);
   position: relative;
-  top: 70px;
+  top: rem(70px);
   left: 0;
   right: 0;
   bottom: 0;
@@ -536,8 +824,8 @@ top: 0%;
 }
 
 .img__str_work2{
-  height: 30px;
-  width: 50px;
+  height: rem(30px);
+  width: rem(50px);
 
 }
 
@@ -548,36 +836,47 @@ top: 0%;
   width: 100%;
   background-size: cover;
   position: relative;
-  top: 140px;
-  height: 650px;
+  top: rem(140px);
+  height: rem(650px);
+    @include phone{
+      top: rem(125px);
+    }
 }
 
 .block_form{
   background-image: url(../img/sand-plyazh-pesok-makro-priroda1.png);
-  height: 650px;
+  height: rem(650px);
   width: 100%;
   background-size: cover;
   position: relative;
 }
 
 .wrap__form{
-  padding: 30px 0 0 0;
+  padding: rem(30px) 0 0 0;
 }
 
 .wrap__zagolovok_otzivi{
   position: relative;
-  height: 150px;
+  height: rem(150px);
   width: 100%;
-  padding: 0 0 150px 0;
+  padding: 0 0 rem(100px) 0;
 }
 
 .zagolovok_otzivi{
   font-family: Sansus_Webissimo;
-  font-size: 63px;
+  font-size: rem(63px);
   text-transform: uppercase;
   text-align: center;
-  padding: 100px 0 0 0;
+  padding: rem(100px) 0 0 0;
+    @include tablet{
+      font-size: rem(40px);
+      padding: rem(70px) 0 0 0;
+    }
 
+    @include phone{
+      font-size: rem(20px);
+      padding: rem(40px) 0 0 0;
+    }
 }
 
 .zagolovok_otzivi:before,
@@ -585,10 +884,16 @@ top: 0%;
   content: '';
   display: inline-block;
   vertical-align: middle;
-  width: 40px;
+  width: rem(40px);
   height: 14px;
   background-image: url("../img/ellipse-3.png");
   margin: 0 10px;
+    @include tablet{
+      width: rem(43px);
+    }
+    @include phone{
+      width: rem(45px);
+    }
 }
 
 .zagolovok_otzivi:after {
@@ -599,83 +904,128 @@ transform: rotateY(180deg);
 
 
 .logo__img_about{
-  position: relative;
-  top: -120px;
-  height: 150px;
-  width: 500px;
+  top: rem(-120px);
+  height: rem(150px);
+  width: rem(500px);
+  
+}
+
+.wrap__logo_img_about{
+  position: absolute;
+  top: 0;
+  height: auto;
+  width: 70%;
   left: 0;
   right: 0;
   bottom: 0;
   margin: 0 auto;
+  display: block
+}
+
+.img__logo_about{
+  height: rem(150px);
+  width: auto;
+  position: absolute;
+  top: rem(50px);
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+    @include tablet{
+      top: rem(10px);
+    }
+    @include phone{
+      top: rem(0px);
+      height: rem(100px);
+    }
 }
 
 
 .block__otzivi{
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 0 50px 0;
+  padding: 0px 0 rem(50px) 0;
+  top: 0px;
+  position: relative;
+  width: 100%;
+  height: auto;
+    @include tablet{
+      top: rem(-100px);
+    }
+    @include phone{
+      top: rem(-150px);
+    }
 }
 
 .otziv__1{
-  display: flex;
-  align-items: center;
-  padding: 0 8% 0 10%;
+  width: 40%;
+  height: auto;
+  display: inline-blog;
+  float: left;
   font-family: roboto-regular, sans-serif;
   color: #5d5a55;
-  font-size: 16px;
+  font-size: rem(16px);
+  padding: 0 5%;
+    @include phone{
+      float: none;
+      width: 90%;
+      height: rem(200px);
+    }
 }
 
-.otziv__2{
-  display: flex;
-  align-items: center;
-  padding: 0 10% 0 8%;
-  font-family: roboto-regular, sans-serif;
-  color: #5d5a55;
-  font-size: 16px;
+
+
+.otziv_dim{
+  padding: 0 0 5% 0;
+  height: rem(100px);
+    @include tablet{
+      height: rem(150px);
+    }
+    @include phone{
+      padding: 7% 0 0 0;
+      height: rem(80px);
+    }
+
 }
 
-foto_dima{
-  padding: 50px 10px 0 30px;
-  display: flex;
+.foto_dima{
+top: 0;
+left: 0;
+height: rem(80px);
+width: rem(80px);
+display: inline-blog;
+
 }
 
 .img__dima{
   border-radius: 50% 50%;
-  height: 80px;
-  width: 80px;
+  height: rem(80px);
+  width: rem(80px);
 }
 
-.otziv_man{
-  display: flex;
-  justify-content: center;
-  padding: 0 0 50px 0;
-}
+
+
 
 .name_dima{
-  display: flex;
-  align-items: center;
-  padding: 0 10% 0 30px;
+  height: rem(50px);
+  display: inline-block;
   color: #cd8920;
+  top: -50px;
+  position: relative;
+  padding: 0 0 0 100px;
+
 }
 
-.foto_zar{
-  display: flex;
-  align-items: center;
-  padding: 0 0 0 10%;
-}
 
-.name_zar{
-  display: flex;
-  align-items: center;
-  padding: 0 30px;
-  color: #cd8920;
-}
+
+
 
 .form1{
-  width: 380px;
-  height: 480px;
+  width: rem(380px);
+  height: rem(480px);
   background-color: rgba(222, 201, 165, 0.55);
-  margin: 50px auto 0 auto;
+  margin: rem(50px) auto 0 auto;
+    @include phone{
+      width: rem(320px);
+    }
 }
 
 .form{
@@ -688,6 +1038,7 @@ foto_dima{
   padding: 10px 0;
   text-align: center;
 }
+
 .inp__email{
   padding: 10px 0;
 }
@@ -699,8 +1050,8 @@ foto_dima{
 
 .textar{
   padding: 10px 0 0 10px;
-  width: 300px;
-  height: 150px;
+  width: rem(300px);
+  height: rem(150px);
   font-family: roboto-regular, sans-serif;
   color: #5d5a55;
   font-size: 16px;
@@ -709,17 +1060,33 @@ foto_dima{
   border-radius: 5px;
   background-color: #fff;
   border: none;
+    @include phone{
+      width: rem(270px);
+    }
 
 }
 
 
 textarea {
   resize: none;
-   } 
+   }
+
+.btn_line{
+  width: rem(380px);
+  height: rem(45px);
+    @include phone{
+      width: rem(320px);
+    }
+}
+
+.btn_line a{
+  height: rem(45px);
+  width: 50%;
+}
 
 .btn__otprav{
-  height: 45px;
-  width: 188px;
+  height: rem(45px);
+  width: 49.8%;
   background-color: #e7a731;
   border: none;
   font-family: roboto-medium, sans-serif;
@@ -728,30 +1095,41 @@ textarea {
   padding: 0 0;
   cursor: pointer;
   position: relative;
-  top: 39px;
+  top: rem(39px);
+  float: left;
+    @include phone{
+      top: rem(42px);
+    }
 }
 
 .btn__ochist{
-  height: 45px;
-  width: 188px;
+  height: rem(45px);
+  width: 49.8%;
   background-color: #e7a731;
   border: none;
   font-family: roboto-medium, sans-serif;
   color: #fff;
-  font-size: 16px;
+  font-size: rem(16px);
   padding: 0 0;
   cursor: pointer;
   position: relative;
-  top: 39px;
+  top: rem(39px);
+  float: right;
+    @include phone{
+      top: rem(42px);
+    }
 }
 
 .zagolovok_contact{
   font-family: Sansus_Webissimo;
-  font-size: 35px;
+  font-size: rem(35px);
   text-transform: uppercase;
   text-align: center;
-  padding: 20px 0 20px 0; 
+  padding: rem(20px) 0 rem(20px) 0; 
   color: #5d5a55;
+    @include phone{
+      font-size: rem(25px);
+    }
 }
 
 .zagolovok_contact::before,
@@ -759,7 +1137,7 @@ textarea {
     content: '';
     display: inline-block;
     vertical-align: middle;
-    width: 21px;
+    width: rem(21px);
     height: 10px;
     background-image: url("../img/ellipse-4.png");
     margin: 0 10px;
@@ -777,12 +1155,15 @@ transform: rotateY(180deg);
   color: #5d5a55;
   font-size: 16px;
   padding: 0 0 0 10px;
-  width: 300px;
+  width: rem(300px);
   outline: none;
-  height: 45px;
+  height: rem(45px);
   border-radius: 5px;
   background-color: #fff;
   border: none;
+    @include phone{
+      width: rem(270px);
+    }
 }
 
 
@@ -802,64 +1183,213 @@ transform: rotateY(180deg);
   background-color: #4e4b46;
   width: 100%;
   top: 0px;
-  height: 150px;
+  height: rem(150px);
   display: flex;
   justify-content: space-between;
   margin-top:  0px;
+    @include laptop{
+      flex-wrap: wrap;
+      height: rem(250px);
+      }
 
+    @include tablet{
+      flex-wrap: wrap;
+      height: rem(400px);
+      }
+
+    @include phone{
+      flex-wrap: wrap;
+      height: rem(400px);
+    }
 }
 
 .cont__f1_1{
   display: flex;
-  align-items: left;
+  align-items: center;
   color: #fff;
   font-family: roboto-light, sans-serif;
   font-size: 16px;
+    @include laptop{
+      justify-content: center;
+      font-size: 16px;
+      }
+    @include tablet{
+      justify-content: center;
+      font-size: 14px;
+    }
+    @include phone{
+      justify-content: center;
+      font-size: 14px;
+    }
 }
 
 .cont__f1{
   padding: 10px 10px;
   border-right: 1px solid #73726d;
+  justify-content: center;
+  width: 70%;
+    @include laptop{
+      border-right: none;
+      border-bottom: 1px solid #73726d;
+      height: rem(100px);
+      width: 100%;
+    }
+    @include tablet{
+      border-right: none;
+      border-bottom: 1px solid #73726d;
+      height: rem(130px);
+      width: 100%;
+    }
+
+    @include phone{
+      border-right: none;
+      border-bottom: 1px solid #73726d;
+      height: rem(130px);
+      width: 100%;
+    }
 }
 
 
 
 .cont__f1_2{
   display: flex;
-  align-items: left;
+  align-items: center;
   padding: 20px 10px;
   color: #a5a4a4;
   font-family: roboto-light, sans-serif;
   font-size: 16px;
+  padding: 20px 10px 0 0px;
+    @include laptop{
+      justify-content: center;
+      font-size: 16px;
+      }
+    @include tablet{
+      justify-content: center;
+      font-size: 14px;
+    }
+    @include phone{
+      justify-content: center;
+      font-size: 14px;
+    }
+}
+
+.cont__f1_3{
+  display: flex;
+  align-items: center;
+  color: #a5a4a4;
+  font-family: roboto-light, sans-serif;
+  font-size: 16px;
+    @include laptop{
+      justify-content: center;
+      font-size: 16px;
+      }
+    @include tablet{
+      justify-content: center;
+      font-size: 14px;
+    }
+    @include phone{
+      justify-content: center;
+      font-size: 14px;
+    }
 
 }
 
 
 .cont__f2{
   display: flex;
-  align-items: left;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+    @include laptop{
+      font-size: 16px;
+      justify-content: flex-start;
+    }
 
+    @include tablet{
+      font-size: 14px;
+    }
+     @include phone{
+      font-size: 14px;
+    }
 }
 
 .cont__f2_1{
+  display: flex;
   padding: 10px 0;
+
+    @include tablet{
+      font-size: 14px;
+    }
+     @include phone{
+      font-size: 14px;
+    }
+}
+
+.cont__f2_1 a{
+    @include tablet{
+      font-size: 14px;
+      padding: 0 rem(5px);
+    }
+     @include phone{
+      font-size: 14px;
+      padding: 0 rem(5px);
+    }
 }
 
 .cont__f2_2{
-  padding: 50px 0 0 0;
+  padding: 5px 0px 10px 0px;
   text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+    @include laptop{
+      font-size: 16px;
+      justify-content: flex-start;
+    }
+
 }
 
 .cont__f3{
   display: flex;
-  align-items: left;
+  align-items: flex-start;
   border-left: 1px solid #73726d;
   flex-wrap: wrap;
   align-content: flex-start;
+  width: 60%;
+    @include laptop{
+      font-size: 16px;
+      justify-content: flex-end;
+      width: 100%;
+      padding: 0 30px 0 0;
+      position: relative;
+      top:rem(-80px);
+      border-left: none;
+    }
+    @include tablet{
+      border-left: none;
+      border-top: 1px solid #73726d;
+      width: 100%;
+  }
+    @include phone{
+      border-left: none;
+      border-top: 1px solid #73726d;
+      width: rem(300px);
+      width: 100%;
+  }
 }
 
 .cont3{
-padding: 25px 40px;
+  padding: 10px 0 0 0;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+    @include laptop{
+      font-size: 15px;
+      justify-content: flex-end;
+    }
 }
 
 .cont__f3_1{
@@ -867,6 +1397,12 @@ padding: 25px 40px;
     font-family: roboto-light, sans-serif;
     font-size: 16px;
     padding: 0 0 5px 0px;
+    width: 100%;
+      @include laptop{
+        font-size: 16px;
+        justify-content: flex-end;
+        text-align: right;
+    }
 
 }
 
@@ -874,19 +1410,31 @@ padding: 25px 40px;
 
 .menu{
   display: inline;
-  padding: 0 20px;
+  padding: 0 rem(20px);
   color: #fff;
   font-family: roboto-medium, sans-serif;
   font-size: 16px;
    text-decoration: none;
+    @include laptop{
+      font-size: 16px;
+      justify-content: flex-end;
+    }
+    @include tablet{
+      font-size: 14px;
+      padding: 0 rem(5px);
+    }
+     @include phone{
+      font-size: 14px;
+      padding: 0 rem(5px);
+    }
 }
 
 
 .svg-vk1-dims{
   fill: #fff;
   padding: 0 8px;
-  height: 50px;
-  width: 50px;
+  height: rem(50px);
+  width: rem(50px);
   text-decoration: none;
   display: inline-block;
 }
@@ -898,8 +1446,8 @@ padding: 25px 40px;
 .svg-github1-dims{
   fill: #fff;
   padding: 0 8px;
-  height: 50px;
-  width: 50px;
+  height: rem(50px);
+  width: rem(50px);
   text-decoration: none;
   display: inline-block;
 }
@@ -916,8 +1464,8 @@ padding: 25px 40px;
 .svg-in1-dims{
   fill: #fff;
   padding: 0 8px;
-  height: 50px;
-  width: 50px;
+  height: rem(50px);
+  width: rem(50px);
   text-decoration: none;
   display: inline-block;
 }
@@ -931,8 +1479,8 @@ padding: 25px 40px;
 
 .svg-hamburger-dims{
   fill: #fff;
-  height: 50px;
-  width: 50px;
+  height: rem(50px);
+  width: rem(50px);
   text-decoration: none;
 
 }
@@ -945,4 +1493,5 @@ padding: 25px 40px;
 
 
 @import 'common/svg-sprite.scss';
+@import 'common/media';
 

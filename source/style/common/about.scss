@@ -32,17 +32,10 @@
   box-sizing: border-box;
 }
 
-.header__work{
-  background-image: url(../img/sand.jpg);
-  height: 650px;
-  width: 100%;
-  background-size: cover;
-  position: relative;
-  top: 0;
-  left: 0;
+.header__about{
   height: 100vh;
-  background-position: left top;
-  background-repeat: no-repeat;
+  min-height: 650px;
+  position: relative;
 }
 
 
@@ -51,7 +44,7 @@
   fill: #fff;
   display: flex;
   align-items: flex-end;
-  padding: 0 20px;
+  padding: 0 rem(20px);
 }
 
 
@@ -81,6 +74,12 @@
   justify-content: space-between;
   padding: 0px 0 0 0;
   width: 100%;
+    @include tablet{
+      flex-wrap: wrap;
+    }
+    @include phone{
+      flex-wrap: wrap;
+    }
 }
 
 .about_i{
@@ -88,6 +87,14 @@
   background: #efeee9;
   justify-content: center;
   width: 50%;
+    @include tablet{
+      width: 100%;
+      height: rem(850px);
+    }
+    @include phone{
+      width: 100%;
+      height: rem(1000px);
+    }
 
 }
 
@@ -97,11 +104,17 @@
   background: #eeebdf;
   flex-wrap: wrap;
   width: 50%;
+    @include tablet{
+      width: 100%;
+    }
+    @include phone{
+      width: 100%;
+    }
 }
 
 .tochki{
   position: relative;
-  top: -80px;
+  top: rem(-80px);
   color: #cacbc8;
 }
 .tochki::before{
@@ -113,10 +126,10 @@ content:"\00B7 \00B7 \00B7"
 
 .zagolovok__about_i{
   font-family: Sansus_Webissimo;
-  font-size: 63px;
+  font-size: rem(63px);
   text-transform: uppercase;
   text-align: center;
-  padding: 50px 0 0 0;
+  padding: rem(50px) 0 0 0;
   color: #373e42;
   z-index: 1;
   height: 100%;
@@ -126,19 +139,19 @@ content:"\00B7 \00B7 \00B7"
 }
 
 .kto__i{
-  height: 500px;
+  height: auto;
   width: 100%;
   position: relative;
-  top: -160px;
+  top: rem(-160px);
 }
 
 .logo__i{
   position: relative;
-  top: -180px;
+  top: rem(-180px);
 }
 
 .wrap__foto_kto_i{
-  height: 300px;
+  height: rem(300px);
   width: auto;
   position: relative;
   top: 0px;
@@ -154,7 +167,7 @@ content:"\00B7 \00B7 \00B7"
   right: 0;
   bottom: 0;
   margin: 0 auto;
-  height: 300px;
+  height: rem(300px);
   width: 100%;
   position: absolute;
   overflow: hidden;
@@ -174,21 +187,21 @@ content:"\00B7 \00B7 \00B7"
 
 .zagolovok__kto_i{
   font-family: Sansus_Webissimo;
-  font-size: 35px;
+  font-size: rem(35px);
   text-transform: uppercase;
   text-align: center;
-  padding: 50px 0 0 0;
+  padding: rem(50px) 0 0 0;
   color: #5d5a55;
-  height: 100px;
+  height: rem(100px);
   width: 100%;
 }
 
 .tochki__zagolovok_kto_i{
   position: relative;
-  top: -120px;
+  top: rem(-120px);
   color: #bfbeba;
   text-align: center;
-  font-size: 70px;
+  font-size: rem(70px);
   overflow: hidden;
 }
 .tochki__zagolovok_kto_i::before{
@@ -203,17 +216,23 @@ content:"\00B7 \00B7"
   line-height: 1.5;
   top: 0px;
   position: relative;
-  margin: 0px 50px;
+  margin: 0px rem(50px);
   text-transform: none;
+    @include tablet{
+      top: rem(-80px);
+    }
+    @include phone{
+      top: rem(-80px);
+    }
 
 }
 
 .text__kto_i{
   font-family: roboto-regular;
-  font-size: 16px;
+  font-size: rem(16px);
   color: #5d5a55;
   padding: 5px 0;
-  top: -50px; 
+  top: rem(-50px); 
   text-align: left;
   position: relative;
 
@@ -221,15 +240,15 @@ content:"\00B7 \00B7"
 
 .zagolovol_polza{
   font-family: Sansus_Webissimo;
-  font-size: 35px;
+  font-size: rem(35px);
   text-transform: uppercase;
   color: #5d5a55;
   text-align: center;
   margin: 0 auto;
   z-index: 1;
-  height: 100px;
+  height: rem(100px);
   width: 100%;
-  padding: 50px 0 0 0;
+  padding: rem(50px) 0 0 0;
     overflow: hidden;
 
 }
@@ -237,10 +256,10 @@ content:"\00B7 \00B7"
 
 .tochki__zagolovol_polza{
    position: relative;
-  top: -80px;
+  top: rem(-80px);
   color: #bfbeba;
   text-align: center;
-  font-size: 70px;
+  font-size: rem(70px);
 }
 .tochki__zagolovol_polza::before{
 content:"\00B7 \00B7"
@@ -250,34 +269,54 @@ content:"\00B7 \00B7"
 }
 
 .wrap{
-  padding: 0 0 30px 0;
+  padding: 0 0 rem(30px) 0;
   background: #eeebdf;
 }
 
 .content_polza{
   font-family: roboto-regular;
-  font-size: 16px;
+  font-size: rem(16px);
   color: #5d5a55;
   padding: 0px 0px 0 2px;
   position: relative;
   top: 0px;
-  margin: 20px 30px;
+  margin: rem(20px) rem(30px);
 }
 
 .frontend{
   font-family: roboto-medium;
-  font-size: 28px;
+  font-size: rem(28px);
   color: #5d5a55;
-  padding: 20px 0px 0 50px;
+  padding: rem(20px) 0px 0 rem(50px);
   text-align: left;
   position: relative;
   top: 0px;
+  display: block;
 }
 
 .Front__scil{
-  padding: 10px 0px 70px 5px;
-  height: 120px;
+  padding: 10px 0px rem(70px) 5px;
+  height: rem(120px);
   width: 100%;
+  display: block;
+    @include monitor{
+      height: rem(280px);
+      }
+    @include laptop{
+      height: rem(280px);
+      }
+
+    @include tablet{
+      height: rem(280px);
+      }
+    @include phone{
+      height: rem(280px);
+      }
+}
+
+.Front__scil li{
+  padding: 0px 5px 0 0;
+
 }
 
 .g-circles{
@@ -288,9 +327,23 @@ content:"\00B7 \00B7"
 
 }
 
+.wrap_scill{
+
+}
+
+
 .skill__item{
   display: inline;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: relative;
+  margin: auto;
+  height: rem(170px);
+  width: rem(120px);
 }
+
 
 .chart {
     position: relative;
@@ -299,50 +352,148 @@ content:"\00B7 \00B7"
     text-align: center;
 }
 
+
+
+
+
+
+
 figure {
-  margin: 0 30px 20px 0;
+  margin: 0 rem(40px) rem(50px) 0;
   vertical-align: middle;
 }
 
 .chart figcaption {
-    width: 120px;
-    height: 120px;
+    width: rem(120px);
+    height: rem(120px);
 
 }
 
 .sector_html{
-  stroke-dasharray: 120 377;
+  stroke-dasharray: 380 377;
+  stroke: #e6ab3d;
+  transition: stroke-dashoffset 1s;
+  stroke-width: 25;
+
+  fill: transparent;
+
+}
+
+
+
+$count: 380;
+
+@for $i from 0 through  100 {
+  
+  $length: $count - ($count/(100/$i)); 
+  .chart[data-percent='#{$i}'] .sector_html {
+    stroke-dashoffset: $length;
+    animation: show#{$i} 2s;
+  }
+
+  @keyframes show#{$i} {
+    from {stroke-dashoffset: $count;}
+    to {stroke-dashoffset: $length;}
+  }
+}
+
+
+.sector_css{
+  stroke-dasharray: 250 377;
   transition: all 1s;
   stroke: #e6ab3d;
 }
 
+
+
+$count1: 250;
+
+@for $j from 0 through  100 {
+  
+  $length1: $count1 - ($count1/(100/$j)); 
+  .chart[data-percent='#{$j}'] .sector_css {
+    stroke-dashoffset: $length1;
+    animation: show1#{$j} 2s;
+  }
+
+  @keyframes show1#{$j} {
+    from {stroke-dashoffset: $count1;}
+    to {stroke-dashoffset: $length1;}
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .name_scil{
   fill: #cd8920;
-  font-size: 16;
+  font-size: rem(16px);
   font-family: roboto-medium;
   stroke-width: 0;
 }
 
-.sector_css{
-  stroke-dasharray: 150 377;
-  transition: all 1s;
-  stroke: #e6ab3d;
-}
 
 .Backend__scil{
-    padding: 10px 0px 50px 5px;
+    padding: 10px 0px rem(60px) 5px;
+    display: block;
+    height: rem(170px);
+    width: 100%;
+      @include monitor{
+        height: rem(280px);
+      }
+      @include laptop{
+        height: rem(280px);
+      }
+
+      @include tablet{
+        height: rem(280px);
+      }
+      @include phone{
+        height: rem(280px);
+      }
+}
+
+.Backend__scil li{
+    padding: 0px 5px 0 0;
 }
 
 .workflow__scil{
-  padding: 10px 0px 100px 5px;
-  height: 120px;
+  padding: 10px 0px rem(100px) 5px;
+  height: rem(120px);
   width: 100%;
+    @include monitor{
+      height: rem(280px);
+      }
+    @include laptop{
+        height: rem(280px);
+      }
+
+    @include tablet{
+      height: rem(280px);
+      }
+    @include phone{
+      height: rem(280px);
+      }
+}
+
+.workflow__scil li{
+  padding: 0px 5px 0 0;
 }
 
 
 .map{
   background-image: url(../img/map.png);
-  height: 650px;
+  height: rem(650px);
   width: 100%;
   background-size: cover;
   position: relative;
@@ -353,12 +504,12 @@ figure {
 
 
 .wrap__form_contacts{
-  padding: 120px 0;
+  padding: rem(120px) 0;
 }
 
 .form__contacts{
-  width: 380px;
-  height: 280px;
+  width: rem(380px);
+  height: rem(280px);
   background-color: rgba(222, 201, 165, 0.55);
   margin: 0 auto;
 
@@ -366,7 +517,7 @@ figure {
 
 .zagolovok__form_contacts{
   font-family: Sansus_Webissimo;
-  font-size: 35px;
+  font-size: rem(35px);
   text-transform: uppercase;
   text-align: center;
   padding: 10px 0 0 0;
@@ -376,10 +527,10 @@ figure {
 
 .tochki_zagolovok__form_contacts{
   position: relative;
-  top: -60px;
+  top: rem(-60px);
   color: #c9c8c7;
   text-align: center;
-  font-size: 70px;
+  font-size: rem(70px);
 }
 .tochki_zagolovok__form_contacts:before{
 content:"\00B7 \00B7"
@@ -392,19 +543,19 @@ content:"\00B7 \00B7"
 
 .contacts__item{
   position: relative;
-  top: -50px;
-  padding: 5px 30px;
+  top: rem(-50px);
+  padding: 5px rem(30px);
 }
 
 .svg-skype-dims{
   fill: #e7a731;
-  padding: 0 20px;
+  padding: 0 rem(20px);
   display: inline-block;
 }
 
 .contacts_text{
   font-family: roboto-medium;
-  font-size: 16px;
+  font-size: rem(16px);
   color: #5d5a55;
   display: inline-block;
   vertical-align: middle;
@@ -414,19 +565,19 @@ content:"\00B7 \00B7"
 
 .svg-envelope2-dims{
   fill: #e7a731;
-  padding: 0 20px;
+  padding: 0 rem(20px);
   display: inline-block;
 }
 
 .svg-phone2-dims{
   fill: #e7a731;
-  padding: 0 20px;
+  padding: 0 rem(20px);
   display: inline-block;
 }
 
 .svg-map_marker-dims{
   fill: #e7a731;
-  padding: 0 20px;
+  padding: 0 rem(20px);
   display: inline-block;
 }
 
@@ -446,67 +597,33 @@ content:"\00B7 \00B7"
 .footer1{
   background-color: #4e4b46;
   width: 100%;
-  height: 150px;
+  height: rem(150px);
   display: flex;
   justify-content: space-between;
   opacity: 0.8;
-  margin-top: -150px;
+  margin-top: rem(-150px);
+    @include laptop{
+      flex-wrap: wrap;
+      height: rem(250px);
+      }
 
+    @include tablet{
+      flex-wrap: wrap;
+      height: rem(400px);
+      }
+
+    @include phone{
+      flex-wrap: wrap;
+      height: rem(400px);
+    }
 
   }
-
-.cont__f1_1{
-  display: flex;
-  align-items: left;
-  color: #fff;
-  font-family: roboto-light, sans-serif;
-  font-size: 16px;
-}
-
-.cont__f1{
-  padding: 10px 10px;
-  border-right: 1px solid #73726d;
-}
-
-
-
-.cont__f1_2{
-  display: flex;
-  align-items: left;
-  padding: 20px 10px;
-  color: #a5a4a4;
-  font-family: roboto-light, sans-serif;
-  font-size: 16px;
-
-}
-
-
-.cont__f2{
-  display: flex;
-  align-items: left;
-
-}
-
-.cont__f2_1{
-  padding: 10px 0;
-}
-
-.cont__f2_2{
-  padding: 50px 0 0 0;
-  text-align: center;
-}
-
-.cont__f3{
-  display: flex;
-  align-items: left;
-  border-left: 1px solid #73726d;
-}
 
 
 
 .menu{
   display: inline;
-  padding: 0 20px;
+  padding: 0 rem(20px);
   color: #fff;
   font-family: roboto-medium, sans-serif;
   font-size: 16px;
@@ -532,6 +649,13 @@ content:"\00B7 \00B7"
 .svg-in-dims{
   fill: #efe4d8;
 }
+
+
+
+
+
+
+
 
 
 @import 'common/svg-sprite.scss';
